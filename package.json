@@ -1,0 +1,16 @@
+{
+  "name": "google-fonts-data-generator",
+  "version": "1.0.0",
+  "description": "Generates Json files and a Typescript interface for Google Fonts.",
+  "main": "index.js",
+  "scripts": {
+    "generate": "ts-node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TJ Mora",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.8.4"
+  }
+}
