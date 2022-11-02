@@ -84,7 +84,7 @@ const tjmoraGFontInterface = `export type GFontName = ${fontsWithMetaData
 ${fontsWithMetaData.reduce((acc, cur) => {
   return (
     acc +
-    "type VariantOf" +
+    "type VariantOf_" +
     cur.name.replace(/\s/g, "_") +
     " = " +
     cur.variants.reduce(
@@ -120,7 +120,7 @@ ${fontsWithMetaData.reduce((acc, cur) => {
     "  '" +
     cur.name +
     "': " +
-    "VariantOf" +
+    "VariantOf_" +
     cur.name.replace(/\s/g, "_") +
     ";\n"
   );
