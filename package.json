@@ -12,5 +12,8 @@
   "devDependencies": {
     "@types/node": "^18.11.9",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@tjmora/ts-range-types": "^1.0.3"
   }
 }

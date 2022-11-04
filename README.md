@@ -9,8 +9,8 @@ Clone this repo and the [@google/fonts](https://github.com/google/fonts) repo to
 directory:
 
 ```
-git clone https://github.com/google/fonts
-git clone https://github.com/tjmora/google-fonts-data-generator
+git clone https://github.com/google/fonts.git google-fonts
+git clone https://github.com/tjmora/google-fonts-data-generator.git
 ```
 
 Then go inside the google-fonts-data-generator folder:
@@ -28,7 +28,7 @@ npm run generate
 Next time you do this, be sure to update your clone of both repositories:
 
 ```
-cd fonts
+cd google-fonts
 git pull origin master
 cd ../google-fonts-data-generator
 git pull origin main
