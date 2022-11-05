@@ -122,6 +122,8 @@ function generateFontVariationType(font: FontI): string {
   Object.keys(font.axes).forEach(key => {
     let min = font.axes[key as Tag]!.min;
     let max = font.axes[key as Tag]!.max;
+    if (Math.floor(min) === Math.floor(max))
+      console.log(`Warning: The Min and Max for the ${key} axis of font ${font.name} floors to the same number.`);
     switch(key) {
       case "wght":
       case "ital":
@@ -135,14 +137,17 @@ function generateFontVariationType(font: FontI): string {
       case "SOFT":
       case "wdth":
       case "WONK":
-        result += "Font_" + key + "_t<" + Math.floor(min) + "," +  Math.floor(max) + ">|";
+        result += `Font_${key}_t<${Math.floor(min)},${Math.floor(max)}>|`;
         break;
       case "EDPT":
       case "EHLT":
       case "YTAS":
       case "YTLC":
       case "YTUC":
-        result += "Font_" + key + "_t<" + Math.floor(min / 100) + "," +  Math.floor(max / 100) + ">|";
+        if (min % 100 === 0 && max % 100 === 0)
+          result += `Font_${key}_t<${Math.floor(min / 100)},${Math.floor(max / 100)},2>|`;
+        else
+          result += `Font_${key}_t<${min},${max}>|`;
         break;
       case "GRAD":
       case "XOPQ":
@@ -150,13 +155,16 @@ function generateFontVariationType(font: FontI): string {
       case "YOPQ":
       case "YTDE":
       case "YTFI":
-        result += "Font_" + key + "_t<" + (min >= 0 ? Math.floor(min / 100) : ("[" + Math.abs(Math.floor(min / 100))  + "]")) + "," + (max >= 0 ? Math.floor(max / 100) : ("[" + Math.abs(Math.floor(max / 100))  + "]")) + ">|";
+        if (min % 100 === 0 && max % 100 === 0)
+          result += `Font_${key}_t<${min >= 0 ? Math.floor(min / 100) : `[${Math.abs(Math.floor(min / 100))}]`},${max >= 0 ? Math.floor(max / 100) : `[${Math.abs(Math.floor(max / 100))}]`},2>|`;
+        else
+          result += `Font_${key}_t<${min >= 0 ? Math.floor(min) : `[${Math.abs(Math.floor(min))}]`},${max >= 0 ? Math.floor(max) : `[${Math.abs(Math.floor(max))}]`}>|`;
         break;
       case "slnt":
-        result += "Font_" + key + "_t<" + (min >= 0 ? Math.floor(min) : ("[" + Math.abs(Math.floor(min))  + "]")) + "," + (max >= 0 ? Math.floor(max) : ("[" + Math.abs(Math.floor(max))  + "]")) + ">|";
+        result += `Font_${key}_t<${min >= 0 ? Math.floor(min) : `[${Math.abs(Math.floor(min))}]`},${max >= 0 ? Math.floor(max) : `[${Math.abs(Math.floor(max))}]`}>|`;
         break;
       default:
-        console.log("invalid variation tag '" + key + "' for " + font.name);
+        console.log(`The font ${font.name} has an undocumented variation axis called ${key}. This axis is ignored.`);
     }
   })
   return result;
@@ -166,13 +174,11 @@ let allFontDirs = getDirectories("../google-fonts/ofl");
 allFontDirs.push(...getDirectories("../google-fonts/ufl"));
 allFontDirs.push(...getDirectories("missing-fonts"));
 
-let fontsWithoutMetaData: [string, string][] = [];
 let fontsWithMetaData: FontI[] = [];
 
 allFontDirs.forEach(([parentDir, fontDir]) => {
   if (!fs.existsSync(path.join(parentDir, fontDir, "METADATA.pb"))) {
-    // Some fonts don't have a METADATA.pb
-    fontsWithoutMetaData.push([parentDir, fontDir]);
+    console.log(`The font ${parentDir}/${fontDir} has no METADATA file. The font is ignored.`);
   } else {
     const textContent = fs.readFileSync(
       path.join(parentDir, fontDir, "METADATA.pb"),
@@ -246,40 +252,30 @@ allFontDirs.forEach(([parentDir, fontDir]) => {
 });
 
 let jsonFontsWithMetaData = JSON.stringify(fontsWithMetaData, undefined, 2);
-let jsonFontsWithoutMetaData = JSON.stringify(
-  fontsWithoutMetaData,
-  undefined,
-  2
-);
-
 fs.writeFileSync("generated/FontsWithMetaData.json", jsonFontsWithMetaData);
-fs.writeFileSync(
-  "generated/FontsWithoutMetaData.json",
-  jsonFontsWithoutMetaData
-);
 
 const tjmoraGFontInterface = `import { StringIntRange, StringFloatRange } from "@tjmora/ts-range-types";
 
 type Font_CASL_t<MIN extends number, MAX extends number> = ${"`CASL=${StringFloatRange<MIN, MAX, 2>}`"};
 type Font_CRSV_t<MIN extends number, MAX extends number> = ${"`CRSV=${StringFloatRange<MIN, MAX, 1>}`"};
-type Font_EDPT_t<MIN extends number, MAX extends number> = ${"`EDPT=${StringIntRange<MIN, MAX, 2>}`"};
-type Font_EHLT_t<MIN extends number, MAX extends number> = ${"`EHLT=${StringIntRange<MIN, MAX, 2>}`"};
+type Font_EDPT_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 | 3 | 4 = 0> = ${"`EDPT=${StringIntRange<MIN, MAX, D>}`"};
+type Font_EHLT_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 | 3 | 4 = 0> = ${"`EHLT=${StringIntRange<MIN, MAX, D>}`"};
 type Font_FILL_t<MIN extends number, MAX extends number> = ${"`FILL=${StringFloatRange<MIN, MAX, 2>}`"};
-type Font_GRAD_t<MIN extends number | [number], MAX extends number | [number]> = ${"`GRAD=${StringIntRange<MIN, MAX, 2>}`"};
+type Font_GRAD_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 | 3 | 4 = 0> = ${"`GRAD=${StringIntRange<MIN, MAX, D>}`"};
 type Font_MONO_t<MIN extends number, MAX extends number> = ${"`MONO=${StringFloatRange<MIN, MAX, 2>}`"};
 type Font_opsz_t<MIN extends number, MAX extends number> = ${"`opsz=${StringFloatRange<MIN, MAX, 1>}`"};
 type Font_slnt_t<MIN extends number | [number], MAX extends number | [number]> = ${"`slnt=${StringIntRange<MIN, MAX>}`"};
 type Font_SOFT_t<MIN extends number, MAX extends number> = ${"`SOFT=${StringFloatRange<MIN, MAX, 1>}`"};
 type Font_wdth_t<MIN extends number, MAX extends number> = ${"`wdth=${StringFloatRange<MIN, MAX, 1>}`"};
 type Font_WONK_t<MIN extends number, MAX extends number> = ${"`WONK=${StringIntRange<MIN, MAX>}`"};
-type Font_XOPQ_t<MIN extends number | [number], MAX extends number | [number]> = ${"`XOPQ=${StringIntRange<MIN, MAX, 2>}`"};
-type Font_XTRA_t<MIN extends number | [number], MAX extends number | [number]> = ${"`XTRA=${StringIntRange<MIN, MAX, 2>}`"};
-type Font_YOPQ_t<MIN extends number | [number], MAX extends number | [number]> = ${"`YOPQ=${StringIntRange<MIN, MAX, 2>}`"};
-type Font_YTAS_t<MIN extends number, MAX extends number> = ${"`YTAS=${StringIntRange<MIN, MAX, 2>}`"};
-type Font_YTDE_t<MIN extends number | [number], MAX extends number | [number]> = ${"`YTAS=${StringIntRange<MIN, MAX, 2>}`"};
-type Font_YTFI_t<MIN extends number | [number], MAX extends number | [number]> = ${"`YTFI=${StringIntRange<MIN, MAX, 2>}`"};
-type Font_YTLC_t<MIN extends number, MAX extends number> = ${"`YTLC=${StringIntRange<MIN, MAX, 2>}`"};
-type Font_YTUC_t<MIN extends number, MAX extends number> = ${"`YTUC=${StringIntRange<MIN, MAX, 2>}`"};
+type Font_XOPQ_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 | 3 | 4 = 0> = ${"`XOPQ=${StringIntRange<MIN, MAX, D>}`"};
+type Font_XTRA_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 | 3 | 4 = 0> = ${"`XTRA=${StringIntRange<MIN, MAX, D>}`"};
+type Font_YOPQ_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 | 3 | 4 = 0> = ${"`YOPQ=${StringIntRange<MIN, MAX, D>}`"};
+type Font_YTAS_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 | 3 | 4 = 0> = ${"`YTAS=${StringIntRange<MIN, MAX, D>}`"};
+type Font_YTDE_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 | 3 | 4 = 0> = ${"`YTDE=${StringIntRange<MIN, MAX, D>}`"};
+type Font_YTFI_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 | 3 | 4 = 0> = ${"`YTFI=${StringIntRange<MIN, MAX, D>}`"};
+type Font_YTLC_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 | 3 | 4 = 0> = ${"`YTLC=${StringIntRange<MIN, MAX, D>}`"};
+type Font_YTUC_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 | 3 | 4 = 0> = ${"`YTUC=${StringIntRange<MIN, MAX, D>}`"};
 
 export type GFontName = ${fontsWithMetaData
   .reduce(
