@@ -76,8 +76,16 @@ function hasWeight(font: FontI, weight: number): boolean {
   return result;
 }
 
-function getDefaultNumericWeights(font: FontI): number[] {
-  let result = font.variants.filter(v => v.style === "normal").map((variant) => variant.weight);
+function getNonRangedNumericWeights(font: FontI): number[] {
+  let result: number[] = [];
+  font.variants.filter(v => v.style === "normal").forEach(variant => {
+    let add = true;
+    if (font.axes["wght"]) {
+      if (variant.weight >= font.axes["wght"].min && variant.weight <= font.axes["wght"].max)
+        add = false;
+    }
+    if (add) result.push(variant.weight);
+  });
   result.sort((a, b) => a - b);
   return result;
 }
@@ -91,9 +99,9 @@ function generateSemanticWeights(font: FontI): string[] {
   return result;
 }
 
-function generateDefaultNumericWeightTypes(font: FontI): string {
-  return getDefaultNumericWeights(font).reduce((acc, cur) => {
-    return acc + cur + "|";
+function generateNonRangedNumericWeightTypes(font: FontI): string {
+  return getNonRangedNumericWeights(font).reduce((acc, cur) => {
+    return acc + "'" +cur + "'|";
   }, "");
 }
 
@@ -294,9 +302,9 @@ ${
       cur.name.replace(/\s/g, "_") +
       " = " +
       (
-        generateSemanticWeightTypes(cur) +
-        generateDefaultNumericWeightTypes(cur) +
-        generateWeightRangeType(cur)
+        generateWeightRangeType(cur) +
+        generateNonRangedNumericWeightTypes(cur) +
+        generateSemanticWeightTypes(cur)
       )
       .slice(0, -1) +
       ";\n"
