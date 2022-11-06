@@ -92,6 +92,18 @@
     "axes": {}
   },
   {
+    "name": "Aclonica",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Acme",
     "variants": [
       {
@@ -1606,6 +1618,27 @@
     "hasNormal": true,
     "hasItalic": false,
     "axes": {}
+  },
+  {
+    "name": "Arimo",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      },
+      {
+        "style": "italic",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": true,
+    "axes": {
+      "wght": {
+        "min": 400,
+        "max": 700
+      }
+    }
   },
   {
     "name": "Arizonia",
@@ -4179,6 +4212,18 @@
     "axes": {}
   },
   {
+    "name": "Calligraffitti",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Cambay",
     "variants": [
       {
@@ -4742,6 +4787,18 @@
     "axes": {}
   },
   {
+    "name": "Cherry Cream Soda",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Cherry Swash",
     "variants": [
       {
@@ -4751,6 +4808,18 @@
       {
         "style": "normal",
         "weight": 700
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Chewy",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
       }
     ],
     "hasNormal": true,
@@ -5050,6 +5119,18 @@
     ],
     "hasNormal": true,
     "hasItalic": true,
+    "axes": {}
+  },
+  {
+    "name": "Coming Soon",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
     "axes": {}
   },
   {
@@ -5431,6 +5512,30 @@
     "axes": {}
   },
   {
+    "name": "Cousine",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      },
+      {
+        "style": "italic",
+        "weight": 400
+      },
+      {
+        "style": "normal",
+        "weight": 700
+      },
+      {
+        "style": "italic",
+        "weight": 700
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": true,
+    "axes": {}
+  },
+  {
     "name": "Coustard",
     "variants": [
       {
@@ -5459,7 +5564,31 @@
     "axes": {}
   },
   {
+    "name": "Crafty Girls",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Creepster",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Creepster Caps",
     "variants": [
       {
         "style": "normal",
@@ -5541,6 +5670,18 @@
   },
   {
     "name": "Croissant One",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Crushed",
     "variants": [
       {
         "style": "normal",
@@ -7665,6 +7806,18 @@
     "axes": {}
   },
   {
+    "name": "Fontdiner Swanky",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Forum",
     "variants": [
       {
@@ -9491,6 +9644,18 @@
     "axes": {}
   },
   {
+    "name": "Homemade Apple",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Homenaje",
     "variants": [
       {
@@ -10492,6 +10657,18 @@
     }
   },
   {
+    "name": "Irish Grover",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Island Moments",
     "variants": [
       {
@@ -10772,6 +10949,78 @@
     "axes": {}
   },
   {
+    "name": "jsMath cmbx10",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "jsMath cmex10",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "jsMath cmmi10",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "jsMath cmr10",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "jsMath cmsy10",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "jsMath cmti10",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Jua",
     "variants": [
       {
@@ -10855,6 +11104,18 @@
         "max": 700
       }
     }
+  },
+  {
+    "name": "Just Another Hand",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
   },
   {
     "name": "Just Me Again Down Here",
@@ -11716,6 +11977,30 @@
     "axes": {}
   },
   {
+    "name": "Kosugi",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Kosugi Maru",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Kotta One",
     "variants": [
       {
@@ -11729,6 +12014,18 @@
   },
   {
     "name": "Koulen",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Kranky",
     "variants": [
       {
         "style": "normal",
@@ -13003,6 +13300,18 @@
     "axes": {}
   },
   {
+    "name": "Luckiest Guy",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Lusitana",
     "variants": [
       {
@@ -13124,6 +13433,18 @@
       {
         "style": "normal",
         "weight": 700
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Maiden Orange",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
       }
     ],
     "hasNormal": true,
@@ -14264,6 +14585,18 @@
     "axes": {}
   },
   {
+    "name": "Montez",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Montserrat",
     "variants": [
       {
@@ -14422,6 +14755,22 @@
       {
         "style": "normal",
         "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Mountains of Christmas",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      },
+      {
+        "style": "normal",
+        "weight": 700
       }
     ],
     "hasNormal": true,
@@ -19103,6 +19452,26 @@
     }
   },
   {
+    "name": "Open Sans Condensed",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 300
+      },
+      {
+        "style": "italic",
+        "weight": 300
+      },
+      {
+        "style": "normal",
+        "weight": 700
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": true,
+    "axes": {}
+  },
+  {
     "name": "Oranienbaum",
     "variants": [
       {
@@ -19674,6 +20043,18 @@
   },
   {
     "name": "Peralta",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Permanent Marker",
     "variants": [
       {
         "style": "normal",
@@ -21070,6 +21451,18 @@
     "axes": {}
   },
   {
+    "name": "Rancho",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Ranga",
     "variants": [
       {
@@ -21280,6 +21673,18 @@
     }
   },
   {
+    "name": "Redressed",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Red Rose",
     "variants": [
       {
@@ -21451,6 +21856,31 @@
     "axes": {}
   },
   {
+    "name": "Roboto",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      },
+      {
+        "style": "italic",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": true,
+    "axes": {
+      "wdth": {
+        "min": 75,
+        "max": 100
+      },
+      "wght": {
+        "min": 100,
+        "max": 900
+      }
+    }
+  },
+  {
     "name": "Roboto Flex",
     "variants": [
       {
@@ -21516,6 +21946,27 @@
     }
   },
   {
+    "name": "Roboto Mono",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      },
+      {
+        "style": "italic",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": true,
+    "axes": {
+      "wght": {
+        "min": 100,
+        "max": 700
+      }
+    }
+  },
+  {
     "name": "Roboto Serif",
     "variants": [
       {
@@ -21549,6 +22000,35 @@
     }
   },
   {
+    "name": "Roboto Slab",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {
+      "wght": {
+        "min": 100,
+        "max": 900
+      }
+    }
+  },
+  {
+    "name": "Rochester",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Rock 3D",
     "variants": [
       {
@@ -21562,6 +22042,18 @@
   },
   {
     "name": "RocknRoll One",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Rock Salt",
     "variants": [
       {
         "style": "normal",
@@ -22523,6 +23015,18 @@
     "axes": {}
   },
   {
+    "name": "Satisfy",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Sawarabi Mincho",
     "variants": [
       {
@@ -22568,6 +23072,18 @@
       {
         "style": "normal",
         "weight": 700
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Schoolbell",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
       }
     ],
     "hasNormal": true,
@@ -23198,7 +23714,31 @@
     "axes": {}
   },
   {
+    "name": "Slackey",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Slackside One",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Smokum",
     "variants": [
       {
         "style": "normal",
@@ -23695,6 +24235,18 @@
     ],
     "hasNormal": true,
     "hasItalic": true,
+    "axes": {}
+  },
+  {
+    "name": "Special Elite",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
     "axes": {}
   },
   {
@@ -24258,6 +24810,18 @@
     "axes": {}
   },
   {
+    "name": "Sunshiney",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Supermercado One",
     "variants": [
       {
@@ -24343,6 +24907,22 @@
       {
         "style": "normal",
         "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Syncopate",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      },
+      {
+        "style": "normal",
+        "weight": 700
       }
     ],
     "hasNormal": true,
@@ -24809,6 +25389,30 @@
     ],
     "hasNormal": true,
     "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Tinos",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      },
+      {
+        "style": "italic",
+        "weight": 400
+      },
+      {
+        "style": "normal",
+        "weight": 700
+      },
+      {
+        "style": "italic",
+        "weight": 700
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": true,
     "axes": {}
   },
   {
@@ -25411,7 +26015,95 @@
     "axes": {}
   },
   {
+    "name": "Ubuntu",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 300
+      },
+      {
+        "style": "italic",
+        "weight": 300
+      },
+      {
+        "style": "normal",
+        "weight": 400
+      },
+      {
+        "style": "italic",
+        "weight": 400
+      },
+      {
+        "style": "normal",
+        "weight": 500
+      },
+      {
+        "style": "italic",
+        "weight": 500
+      },
+      {
+        "style": "normal",
+        "weight": 700
+      },
+      {
+        "style": "italic",
+        "weight": 700
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": true,
+    "axes": {}
+  },
+  {
+    "name": "Ubuntu Condensed",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Ubuntu Mono",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      },
+      {
+        "style": "italic",
+        "weight": 400
+      },
+      {
+        "style": "normal",
+        "weight": 700
+      },
+      {
+        "style": "italic",
+        "weight": 700
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": true,
+    "axes": {}
+  },
+  {
     "name": "Uchen",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Ultra",
     "variants": [
       {
         "style": "normal",
@@ -25476,6 +26168,22 @@
       {
         "style": "normal",
         "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Unkempt",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      },
+      {
+        "style": "normal",
+        "weight": 700
       }
     ],
     "hasNormal": true,
@@ -25859,6 +26567,18 @@
     "axes": {}
   },
   {
+    "name": "Walter Turncoat",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
     "name": "Warnes",
     "variants": [
       {
@@ -26095,6 +26815,18 @@
   },
   {
     "name": "Yatra One",
+    "variants": [
+      {
+        "style": "normal",
+        "weight": 400
+      }
+    ],
+    "hasNormal": true,
+    "hasItalic": false,
+    "axes": {}
+  },
+  {
+    "name": "Yellowtail",
     "variants": [
       {
         "style": "normal",
@@ -26569,175 +27301,5 @@
     "hasNormal": true,
     "hasItalic": false,
     "axes": {}
-  },
-  {
-    "name": "Ubuntu",
-    "variants": [
-      {
-        "style": "normal",
-        "weight": 300
-      },
-      {
-        "style": "italic",
-        "weight": 300
-      },
-      {
-        "style": "normal",
-        "weight": 400
-      },
-      {
-        "style": "italic",
-        "weight": 400
-      },
-      {
-        "style": "normal",
-        "weight": 500
-      },
-      {
-        "style": "italic",
-        "weight": 500
-      },
-      {
-        "style": "normal",
-        "weight": 700
-      },
-      {
-        "style": "italic",
-        "weight": 700
-      }
-    ],
-    "hasNormal": true,
-    "hasItalic": true,
-    "axes": {}
-  },
-  {
-    "name": "Ubuntu Condensed",
-    "variants": [
-      {
-        "style": "normal",
-        "weight": 400
-      }
-    ],
-    "hasNormal": true,
-    "hasItalic": false,
-    "axes": {}
-  },
-  {
-    "name": "Ubuntu Mono",
-    "variants": [
-      {
-        "style": "normal",
-        "weight": 400
-      },
-      {
-        "style": "italic",
-        "weight": 400
-      },
-      {
-        "style": "normal",
-        "weight": 700
-      },
-      {
-        "style": "italic",
-        "weight": 700
-      }
-    ],
-    "hasNormal": true,
-    "hasItalic": true,
-    "axes": {}
-  },
-  {
-    "name": "Roboto",
-    "variants": [
-      {
-        "style": "normal",
-        "weight": 100
-      },
-      {
-        "style": "italic",
-        "weight": 100
-      },
-      {
-        "style": "normal",
-        "weight": 300
-      },
-      {
-        "style": "italic",
-        "weight": 300
-      },
-      {
-        "style": "normal",
-        "weight": 400
-      },
-      {
-        "style": "italic",
-        "weight": 400
-      },
-      {
-        "style": "normal",
-        "weight": 500
-      },
-      {
-        "style": "italic",
-        "weight": 500
-      },
-      {
-        "style": "normal",
-        "weight": 700
-      },
-      {
-        "style": "italic",
-        "weight": 700
-      },
-      {
-        "style": "normal",
-        "weight": 900
-      },
-      {
-        "style": "italic",
-        "weight": 900
-      }
-    ],
-    "hasNormal": true,
-    "hasItalic": true,
-    "axes": {}
-  },
-  {
-    "name": "Roboto Mono",
-    "variants": [
-      {
-        "style": "normal",
-        "weight": 400
-      },
-      {
-        "style": "italic",
-        "weight": 400
-      }
-    ],
-    "hasNormal": true,
-    "hasItalic": true,
-    "axes": {
-      "wght": {
-        "min": 100,
-        "max": 700
-      }
-    }
-  },
-  {
-    "name": "Roboto Slab",
-    "variants": [
-      {
-        "style": "normal",
-        "weight": 400
-      }
-    ],
-    "hasNormal": true,
-    "hasItalic": false,
-    "axes": {
-      "wght": {
-        "min": 100,
-        "max": 900
-      }
-    }
   }
 ]

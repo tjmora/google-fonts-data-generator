@@ -25,67 +25,69 @@ type Font_YTUC_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0
 
 export type GFontName = 
   |'ABeeZee'|'Abel'|'Abhaya Libre'|'Aboreto'|'Abril Fatface'
-  |'Abyssinica SIL'|'Acme'|'Actor'|'Adamina'|'Adobe Blank'
-  |'Advent Pro'|'Aguafina Script'|'Akaya Kanadaka'|'Akaya Telivigala'|'Akronim'
-  |'Akshar'|'Aladin'|'Alata'|'Alatsi'|'Albert Sans'
-  |'Aldrich'|'Alef'|'Alegreya'|'Alegreya Sans'|'Alegreya Sans SC'
-  |'Alegreya SC'|'Aleo'|'Alex Brush'|'Alfa Slab One'|'Alice'
-  |'Alike'|'Alike Angular'|'Alkalami'|'Allan'|'Allerta'
-  |'Allerta Stencil'|'Allison'|'Allura'|'Almarai'|'Almendra'
-  |'Almendra Display'|'Almendra SC'|'Alumni Sans'|'Alumni Sans Collegiate One'|'Alumni Sans Inline One'
-  |'Alumni Sans Pinstripe'|'Amarante'|'Amaranth'|'Amatic SC'|'Amethysta'
-  |'Amiko'|'Amiri'|'Amiri Quran'|'Amiri Quran Colored'|'Amita'
-  |'Anaheim'|'Andada Pro'|'Andika'|'Anek Bangla'|'Anek Devanagari'
-  |'Anek Gujarati'|'Anek Gurmukhi'|'Anek Kannada'|'Anek Latin'|'Anek Malayalam'
-  |'Anek Odia'|'Anek Tamil'|'Anek Telugu'|'Angkor'|'Annie Use Your Telescope'
-  |'Anonymous Pro'|'Antic'|'Antic Didone'|'Antic Slab'|'Anton'
-  |'Antonio'|'Anybody'|'Aoboshi One'|'Arapey'|'Arbutus'
-  |'Arbutus Slab'|'Architects Daughter'|'Archivo'|'Archivo Black'|'Archivo Narrow'
-  |'Aref Ruqaa'|'Aref Ruqaa Ink'|'Are You Serious'|'Arima'|'Arima Madurai'
-  |'Arizonia'|'Armata'|'Arsenal'|'Artifika'|'Arvo'
-  |'Arya'|'Asap'|'Asap Condensed'|'Asar'|'Asset'
-  |'Assistant'|'Astloch'|'Asul'|'Athiti'|'Atkinson Hyperlegible'
-  |'Atma'|'Atomic Age'|'Aubrey'|'Audiowide'|'Autour One'
-  |'Average'|'Average Sans'|'Averia Gruesa Libre'|'Averia Libre'|'Averia Sans Libre'
-  |'Averia Serif Libre'|'Azeret Mono'|'B612'|'B612 Mono'|'Babylonica'
-  |'Bad Script'|'Bahiana'|'Bahianita'|'Bai Jamjuree'|'Bakbak One'
-  |'Ballet'|'Baloo 2'|'Baloo Bhai 2'|'Baloo Bhaijaan 2'|'Baloo Bhaina 2'
-  |'Baloo Chettan 2'|'Baloo Da 2'|'Baloo Paaji 2'|'Baloo Tamma 2'|'Baloo Tammudu 2'
-  |'Baloo Thambi 2'|'Balsamiq Sans'|'Balthazar'|'Bangers'|'Barlow'
-  |'Barlow Condensed'|'Barlow Semi Condensed'|'Barriecito'|'Barrio'|'Basic'
-  |'Baskervville'|'Battambang'|'Baumans'|'Bayon'|'Beau Rivage'
-  |'Bebas Neue'|'Belgrano'|'Bellefair'|'Belleza'|'Bellota'
-  |'Bellota Text'|'BenchNine'|'Benne'|'Bentham'|'Berkshire Swash'
-  |'Besley'|'Beth Ellen'|'Bevan'|'Be Vietnam Pro'|'Bhavuka'
-  |'BhuTuka Expanded One'|'Bigelow Rules'|'Bigshot One'|'Big Shoulders Display'|'Big Shoulders Inline Display'
-  |'Big Shoulders Inline Text'|'Big Shoulders Stencil Display'|'Big Shoulders Stencil Text'|'Big Shoulders Text'|'Bilbo'
-  |'Bilbo Swash Caps'|'Bio Rhyme'|'Bio Rhyme Expanded'|'Birthstone'|'Birthstone Bounce'
-  |'Biryani'|'Bitter'|'BIZ UDGothic'|'BIZ UDMincho'|'BIZ UDPGothic'
-  |'BIZ UDPMincho'|'Black And White Picture'|'Black Han Sans'|'Black Ops One'|'Blaka'
-  |'Blaka Hollow'|'Blaka Ink'|'Blinker'|'Bodoni Moda'|'Bokor'
-  |'Bona Nova'|'Bonbon'|'Bonheur Royale'|'Boogaloo'|'Bowlby One'
-  |'Bowlby One SC'|'Brawler'|'Bree Serif'|'Bruno Ace'|'Bruno Ace SC'
-  |'Brygada 1918'|'Bubblegum Sans'|'Bubbler One'|'Buda'|'Buenard'
-  |'Bungee'|'Bungee Color'|'Bungee Hairline'|'Bungee Inline'|'Bungee Outline'
-  |'Bungee Shade'|'Bungee Spice'|'Butcherman'|'Butterfly Kids'|'Cabin'
-  |'Cabin Condensed'|'Cabin Sketch'|'Caesar Dressing'|'Cagliostro'|'Cairo'
-  |'Cairo Play'|'Caladea'|'Calistoga'|'Cambay'|'Cambo'
-  |'Candal'|'Cantarell'|'Cantata One'|'Cantora One'|'Capriola'
-  |'Caramel'|'Carattere'|'Cardo'|'Carme'|'Carrois Gothic'
-  |'Carrois Gothic SC'|'Carter One'|'Castoro'|'Catamaran'|'Caudex'
-  |'Caveat'|'Caveat Brush'|'Cedarville Cursive'|'Ceviche One'|'Chakra Petch'
-  |'Changa'|'Changa One'|'Chango'|'Charis SIL'|'Charm'
-  |'Charmonman'|'Chathura'|'Chau Philomene One'|'Chela One'|'Chelsea Market'
-  |'Chenla'|'Cherish'|'Cherry Bomb One'|'Cherry Swash'|'Chicle'
+  |'Abyssinica SIL'|'Aclonica'|'Acme'|'Actor'|'Adamina'
+  |'Adobe Blank'|'Advent Pro'|'Aguafina Script'|'Akaya Kanadaka'|'Akaya Telivigala'
+  |'Akronim'|'Akshar'|'Aladin'|'Alata'|'Alatsi'
+  |'Albert Sans'|'Aldrich'|'Alef'|'Alegreya'|'Alegreya Sans'
+  |'Alegreya Sans SC'|'Alegreya SC'|'Aleo'|'Alex Brush'|'Alfa Slab One'
+  |'Alice'|'Alike'|'Alike Angular'|'Alkalami'|'Allan'
+  |'Allerta'|'Allerta Stencil'|'Allison'|'Allura'|'Almarai'
+  |'Almendra'|'Almendra Display'|'Almendra SC'|'Alumni Sans'|'Alumni Sans Collegiate One'
+  |'Alumni Sans Inline One'|'Alumni Sans Pinstripe'|'Amarante'|'Amaranth'|'Amatic SC'
+  |'Amethysta'|'Amiko'|'Amiri'|'Amiri Quran'|'Amiri Quran Colored'
+  |'Amita'|'Anaheim'|'Andada Pro'|'Andika'|'Anek Bangla'
+  |'Anek Devanagari'|'Anek Gujarati'|'Anek Gurmukhi'|'Anek Kannada'|'Anek Latin'
+  |'Anek Malayalam'|'Anek Odia'|'Anek Tamil'|'Anek Telugu'|'Angkor'
+  |'Annie Use Your Telescope'|'Anonymous Pro'|'Antic'|'Antic Didone'|'Antic Slab'
+  |'Anton'|'Antonio'|'Anybody'|'Aoboshi One'|'Arapey'
+  |'Arbutus'|'Arbutus Slab'|'Architects Daughter'|'Archivo'|'Archivo Black'
+  |'Archivo Narrow'|'Aref Ruqaa'|'Aref Ruqaa Ink'|'Are You Serious'|'Arima'
+  |'Arima Madurai'|'Arimo'|'Arizonia'|'Armata'|'Arsenal'
+  |'Artifika'|'Arvo'|'Arya'|'Asap'|'Asap Condensed'
+  |'Asar'|'Asset'|'Assistant'|'Astloch'|'Asul'
+  |'Athiti'|'Atkinson Hyperlegible'|'Atma'|'Atomic Age'|'Aubrey'
+  |'Audiowide'|'Autour One'|'Average'|'Average Sans'|'Averia Gruesa Libre'
+  |'Averia Libre'|'Averia Sans Libre'|'Averia Serif Libre'|'Azeret Mono'|'B612'
+  |'B612 Mono'|'Babylonica'|'Bad Script'|'Bahiana'|'Bahianita'
+  |'Bai Jamjuree'|'Bakbak One'|'Ballet'|'Baloo 2'|'Baloo Bhai 2'
+  |'Baloo Bhaijaan 2'|'Baloo Bhaina 2'|'Baloo Chettan 2'|'Baloo Da 2'|'Baloo Paaji 2'
+  |'Baloo Tamma 2'|'Baloo Tammudu 2'|'Baloo Thambi 2'|'Balsamiq Sans'|'Balthazar'
+  |'Bangers'|'Barlow'|'Barlow Condensed'|'Barlow Semi Condensed'|'Barriecito'
+  |'Barrio'|'Basic'|'Baskervville'|'Battambang'|'Baumans'
+  |'Bayon'|'Beau Rivage'|'Bebas Neue'|'Belgrano'|'Bellefair'
+  |'Belleza'|'Bellota'|'Bellota Text'|'BenchNine'|'Benne'
+  |'Bentham'|'Berkshire Swash'|'Besley'|'Beth Ellen'|'Bevan'
+  |'Be Vietnam Pro'|'Bhavuka'|'BhuTuka Expanded One'|'Bigelow Rules'|'Bigshot One'
+  |'Big Shoulders Display'|'Big Shoulders Inline Display'|'Big Shoulders Inline Text'|'Big Shoulders Stencil Display'|'Big Shoulders Stencil Text'
+  |'Big Shoulders Text'|'Bilbo'|'Bilbo Swash Caps'|'Bio Rhyme'|'Bio Rhyme Expanded'
+  |'Birthstone'|'Birthstone Bounce'|'Biryani'|'Bitter'|'BIZ UDGothic'
+  |'BIZ UDMincho'|'BIZ UDPGothic'|'BIZ UDPMincho'|'Black And White Picture'|'Black Han Sans'
+  |'Black Ops One'|'Blaka'|'Blaka Hollow'|'Blaka Ink'|'Blinker'
+  |'Bodoni Moda'|'Bokor'|'Bona Nova'|'Bonbon'|'Bonheur Royale'
+  |'Boogaloo'|'Bowlby One'|'Bowlby One SC'|'Brawler'|'Bree Serif'
+  |'Bruno Ace'|'Bruno Ace SC'|'Brygada 1918'|'Bubblegum Sans'|'Bubbler One'
+  |'Buda'|'Buenard'|'Bungee'|'Bungee Color'|'Bungee Hairline'
+  |'Bungee Inline'|'Bungee Outline'|'Bungee Shade'|'Bungee Spice'|'Butcherman'
+  |'Butterfly Kids'|'Cabin'|'Cabin Condensed'|'Cabin Sketch'|'Caesar Dressing'
+  |'Cagliostro'|'Cairo'|'Cairo Play'|'Caladea'|'Calistoga'
+  |'Calligraffitti'|'Cambay'|'Cambo'|'Candal'|'Cantarell'
+  |'Cantata One'|'Cantora One'|'Capriola'|'Caramel'|'Carattere'
+  |'Cardo'|'Carme'|'Carrois Gothic'|'Carrois Gothic SC'|'Carter One'
+  |'Castoro'|'Catamaran'|'Caudex'|'Caveat'|'Caveat Brush'
+  |'Cedarville Cursive'|'Ceviche One'|'Chakra Petch'|'Changa'|'Changa One'
+  |'Chango'|'Charis SIL'|'Charm'|'Charmonman'|'Chathura'
+  |'Chau Philomene One'|'Chela One'|'Chelsea Market'|'Chenla'|'Cherish'
+  |'Cherry Bomb One'|'Cherry Cream Soda'|'Cherry Swash'|'Chewy'|'Chicle'
   |'Chilanka'|'Chivo'|'Chokokutai'|'Chonburi'|'Cinzel'
   |'Cinzel Decorative'|'Clicker Script'|'Climate Crisis'|'Coda'|'Coda Caption'
   |'Codystar'|'Coiny'|'Combo'|'Comfortaa'|'Comforter'
-  |'Comforter Brush'|'Comic Neue'|'Commissioner'|'Concert One'|'Condiment'
-  |'Content'|'Contrail One'|'Convergence'|'Cookie'|'Copse'
-  |'Corben'|'Corinthia'|'Cormorant'|'Cormorant Garamond'|'Cormorant Infant'
-  |'Cormorant SC'|'Cormorant Unicase'|'Cormorant Upright'|'Courgette'|'Courier Prime'
-  |'Coustard'|'Covered By Your Grace'|'Creepster'|'Crete Round'|'Crimson Pro'
-  |'Crimson Text'|'Croissant One'|'Cuprum'|'Cute Font'|'Cutive'
+  |'Comforter Brush'|'Comic Neue'|'Coming Soon'|'Commissioner'|'Concert One'
+  |'Condiment'|'Content'|'Contrail One'|'Convergence'|'Cookie'
+  |'Copse'|'Corben'|'Corinthia'|'Cormorant'|'Cormorant Garamond'
+  |'Cormorant Infant'|'Cormorant SC'|'Cormorant Unicase'|'Cormorant Upright'|'Courgette'
+  |'Courier Prime'|'Cousine'|'Coustard'|'Covered By Your Grace'|'Crafty Girls'
+  |'Creepster'|'Creepster Caps'|'Crete Round'|'Crimson Pro'|'Crimson Text'
+  |'Croissant One'|'Crushed'|'Cuprum'|'Cute Font'|'Cutive'
   |'Cutive Mono'|'Damion'|'Dancing Script'|'Dangrek'|'Darker Grotesque'
   |'Darumadrop One'|'David Libre'|'Dawning of a New Day'|'Days One'|'Dekko'
   |'Dela Gothic One'|'Delius'|'Delius Swash Caps'|'Delius Unicase'|'Della Respira'
@@ -108,41 +110,43 @@ export type GFontName =
   |'Finger Paint'|'Finlandica'|'Fira Code'|'Fira Mono'|'Fira Sans'
   |'Fira Sans Condensed'|'Fira Sans Extra Condensed'|'Fjalla One'|'Fjord One'|'Flamenco'
   |'Flavors'|'Fleur De Leah'|'Flow Block'|'Flow Circular'|'Flow Rounded'
-  |'Foldit'|'Fondamento'|'Forum'|'Fragment Mono'|'Francois One'
-  |'Frank Ruhl Libre'|'Fraunces'|'Freckle Face'|'Fredericka the Great'|'Fredoka'
-  |'Fredoka One'|'Freehand'|'Fresca'|'Frijole'|'Fruktur'
-  |'Fugaz One'|'Fuggles'|'Fuzzy Bubbles'|'Gabriela'|'Gaegu'
-  |'Gafata'|'Galada'|'Galdeano'|'Galindo'|'Gamja Flower'
-  |'Gantari'|'Gayathri'|'Gelasio'|'Gemunu Libre'|'Genos'
-  |'Gentium Book Basic'|'Gentium Book Plus'|'Gentium Plus'|'Geo'|'Georama'
-  |'Geostar'|'Geostar Fill'|'Germania One'|'GFS Didot'|'GFS Neohellenic'
-  |'Gideon Roman'|'Gidugu'|'Gilda Display'|'Girassol'|'Give You Glory'
-  |'Glass Antiqua'|'Glegoo'|'Gloria Hallelujah'|'Glory'|'Gluten'
-  |'Goblin One'|'Gochi Hand'|'Goldman'|'Gorditas'|'Gothic A1'
-  |'Gotu'|'Goudy Bookletter 1911'|'Gowun Batang'|'Gowun Dodum'|'Graduate'
-  |'Grand Hotel'|'Grandstander'|'Grape Nuts'|'Gravitas One'|'Great Vibes'
-  |'Grechen Fuemen'|'Grenze'|'Grenze Gotisch'|'Grey Qo'|'Griffy'
-  |'Gruppo'|'Gudea'|'Gugi'|'Gulzar'|'Gupter'
-  |'Gurajada'|'Gwendolyn'|'Habibi'|'Hachi Maru Pop'|'Hahmlet'
-  |'Halant'|'Hammersmith One'|'Hanalei'|'Hanalei Fill'|'Handjet'
-  |'Handlee'|'Hanuman'|'Happy Monkey'|'Harmattan'|'Headland One'
-  |'Heebo'|'Henny Penny'|'Hepta Slab'|'Hermeneus One'|'Herr Von Muellerhoff'
-  |'Hi Melody'|'Hina Mincho'|'Hind'|'Hind Colombo'|'Hind Guntur'
-  |'Hind Jalandhar'|'Hind Kochi'|'Hind Madurai'|'Hind Mysuru'|'Hind Siliguri'
-  |'Hind Vadodara'|'Holtwood One SC'|'Homenaje'|'Hubballi'|'Hurricane'
-  |'Ibarra Real Nova'|'IBM Plex Mono'|'IBM Plex Sans'|'IBM Plex Sans Arabic'|'IBM Plex Sans Condensed'
-  |'IBM Plex Sans Devanagari'|'IBM Plex Sans Hebrew'|'IBM Plex Sans JP'|'IBM Plex Sans KR'|'IBM Plex Sans Thai'
-  |'IBM Plex Sans Thai Looped'|'IBM Plex Serif'|'Iceberg'|'Iceland'|'Imbue'
-  |'IM Fell Double Pica'|'IM Fell Double Pica SC'|'IM Fell DW Pica'|'IM Fell DW Pica SC'|'IM Fell English'
-  |'IM Fell English SC'|'IM Fell French Canon'|'IM Fell French Canon SC'|'IM Fell Great Primer'|'IM Fell Great Primer SC'
-  |'Imperial Script'|'Imprima'|'Inconsolata'|'Inder'|'Indie Flower'
-  |'Ingrid Darling'|'Inika'|'Inknut Antiqua'|'Inria Sans'|'Inria Serif'
-  |'Inspiration'|'Inter'|'Inter Tight'|'Island Moments'|'Istok Web'
-  |'Italiana'|'Italianno'|'Itim'|'Jacques Francois'|'Jacques Francois Shadow'
-  |'Jaldi'|'JetBrains Mono'|'Jim Nightshade'|'Joan'|'Jockey One'
-  |'Jolly Lodger'|'Jomhuria'|'Jomolhari'|'Josefin Sans'|'Josefin Slab'
-  |'Jost'|'Joti One'|'Jua'|'Judson'|'Julee'
-  |'Julius Sans One'|'Junge'|'Jura'|'Just Me Again Down Here'|'K2D'
+  |'Foldit'|'Fondamento'|'Fontdiner Swanky'|'Forum'|'Fragment Mono'
+  |'Francois One'|'Frank Ruhl Libre'|'Fraunces'|'Freckle Face'|'Fredericka the Great'
+  |'Fredoka'|'Fredoka One'|'Freehand'|'Fresca'|'Frijole'
+  |'Fruktur'|'Fugaz One'|'Fuggles'|'Fuzzy Bubbles'|'Gabriela'
+  |'Gaegu'|'Gafata'|'Galada'|'Galdeano'|'Galindo'
+  |'Gamja Flower'|'Gantari'|'Gayathri'|'Gelasio'|'Gemunu Libre'
+  |'Genos'|'Gentium Book Basic'|'Gentium Book Plus'|'Gentium Plus'|'Geo'
+  |'Georama'|'Geostar'|'Geostar Fill'|'Germania One'|'GFS Didot'
+  |'GFS Neohellenic'|'Gideon Roman'|'Gidugu'|'Gilda Display'|'Girassol'
+  |'Give You Glory'|'Glass Antiqua'|'Glegoo'|'Gloria Hallelujah'|'Glory'
+  |'Gluten'|'Goblin One'|'Gochi Hand'|'Goldman'|'Gorditas'
+  |'Gothic A1'|'Gotu'|'Goudy Bookletter 1911'|'Gowun Batang'|'Gowun Dodum'
+  |'Graduate'|'Grand Hotel'|'Grandstander'|'Grape Nuts'|'Gravitas One'
+  |'Great Vibes'|'Grechen Fuemen'|'Grenze'|'Grenze Gotisch'|'Grey Qo'
+  |'Griffy'|'Gruppo'|'Gudea'|'Gugi'|'Gulzar'
+  |'Gupter'|'Gurajada'|'Gwendolyn'|'Habibi'|'Hachi Maru Pop'
+  |'Hahmlet'|'Halant'|'Hammersmith One'|'Hanalei'|'Hanalei Fill'
+  |'Handjet'|'Handlee'|'Hanuman'|'Happy Monkey'|'Harmattan'
+  |'Headland One'|'Heebo'|'Henny Penny'|'Hepta Slab'|'Hermeneus One'
+  |'Herr Von Muellerhoff'|'Hi Melody'|'Hina Mincho'|'Hind'|'Hind Colombo'
+  |'Hind Guntur'|'Hind Jalandhar'|'Hind Kochi'|'Hind Madurai'|'Hind Mysuru'
+  |'Hind Siliguri'|'Hind Vadodara'|'Holtwood One SC'|'Homemade Apple'|'Homenaje'
+  |'Hubballi'|'Hurricane'|'Ibarra Real Nova'|'IBM Plex Mono'|'IBM Plex Sans'
+  |'IBM Plex Sans Arabic'|'IBM Plex Sans Condensed'|'IBM Plex Sans Devanagari'|'IBM Plex Sans Hebrew'|'IBM Plex Sans JP'
+  |'IBM Plex Sans KR'|'IBM Plex Sans Thai'|'IBM Plex Sans Thai Looped'|'IBM Plex Serif'|'Iceberg'
+  |'Iceland'|'Imbue'|'IM Fell Double Pica'|'IM Fell Double Pica SC'|'IM Fell DW Pica'
+  |'IM Fell DW Pica SC'|'IM Fell English'|'IM Fell English SC'|'IM Fell French Canon'|'IM Fell French Canon SC'
+  |'IM Fell Great Primer'|'IM Fell Great Primer SC'|'Imperial Script'|'Imprima'|'Inconsolata'
+  |'Inder'|'Indie Flower'|'Ingrid Darling'|'Inika'|'Inknut Antiqua'
+  |'Inria Sans'|'Inria Serif'|'Inspiration'|'Inter'|'Inter Tight'
+  |'Irish Grover'|'Island Moments'|'Istok Web'|'Italiana'|'Italianno'
+  |'Itim'|'Jacques Francois'|'Jacques Francois Shadow'|'Jaldi'|'JetBrains Mono'
+  |'Jim Nightshade'|'Joan'|'Jockey One'|'Jolly Lodger'|'Jomhuria'
+  |'Jomolhari'|'Josefin Sans'|'Josefin Slab'|'Jost'|'Joti One'
+  |'jsMath cmbx10'|'jsMath cmex10'|'jsMath cmmi10'|'jsMath cmr10'|'jsMath cmsy10'
+  |'jsMath cmti10'|'Jua'|'Judson'|'Julee'|'Julius Sans One'
+  |'Junge'|'Jura'|'Just Another Hand'|'Just Me Again Down Here'|'K2D'
   |'Kadwa'|'Kaisei Decol'|'Kaisei HarunoUmi'|'Kaisei Opti'|'Kaisei Tokumin'
   |'Kalam'|'Kameron'|'Kanit'|'Kantumruy'|'Kantumruy Pro'
   |'Kapakana'|'Karantina'|'Karla'|'Karla Tamil Inclined'|'Karla Tamil Upright'
@@ -150,23 +154,24 @@ export type GFontName =
   |'Kdam Thmor Pro'|'Keania One'|'Kelly Slab'|'Kenia'|'Khand'
   |'Khmer'|'Khula'|'Kings'|'Kirang Haerang'|'Kite One'
   |'Kiwi Maru'|'Klee One'|'Knewave'|'Kodchasan'|'KoHo'
-  |'Koh Santepheap'|'Kolker Brush'|'Kotta One'|'Koulen'|'Kreon'
-  |'Kristi'|'Krona One'|'Krub'|'Kufam'|'Kulim Park'
-  |'Kumar One'|'Kumbh Sans'|'Kurale'|'La Belle Aurore'|'Lacquer'
-  |'Laila'|'Lakki Reddy'|'Lalezar'|'Lancelot'|'Langar'
-  |'Lateef'|'Lato'|'Lavishly Yours'|'League Gothic'|'League Script'
-  |'League Spartan'|'Leckerli One'|'Ledger'|'Lekton'|'Lemon'
-  |'Lemonada'|'Lexend'|'Lexend Deca'|'Lexend Exa'|'Lexend Giga'
-  |'Lexend Mega'|'Lexend Peta'|'Lexend Tera'|'Lexend Zetta'|'Libre Barcode 128'
-  |'Libre Barcode 128 Text'|'Libre Barcode 39'|'Libre Barcode 39 Extended'|'Libre Barcode 39 Extended Text'|'Libre Barcode 39 Text'
-  |'Libre Barcode EAN13 Text'|'Libre Baskerville'|'Libre Bodoni'|'Libre Caslon Display'|'Libre Caslon Text'
-  |'Libre Franklin'|'Licorice'|'Life Savers'|'Lilita One'|'Lily Script One'
-  |'Limelight'|'Linden Hill'|'Literata'|'Liu Jian Mao Cao'|'Livvic'
-  |'Lobster'|'Lobster Two'|'Lohit Bengali'|'Lohit Tamil'|'Londrina Outline'
-  |'Londrina Shadow'|'Londrina Sketch'|'Londrina Solid'|'Long Cang'|'Lora'
-  |'Loved by the King'|'Love Light'|'Lovers Quarrel'|'Love Ya Like A Sister'|'Lusitana'
-  |'Lustria'|'Luxurious Roman'|'Luxurious Script'|'Macondo'|'Macondo Swash Caps'
-  |'Mada'|'Magra'|'Maitree'|'Major Mono Display'|'Mako'
+  |'Koh Santepheap'|'Kolker Brush'|'Kosugi'|'Kosugi Maru'|'Kotta One'
+  |'Koulen'|'Kranky'|'Kreon'|'Kristi'|'Krona One'
+  |'Krub'|'Kufam'|'Kulim Park'|'Kumar One'|'Kumbh Sans'
+  |'Kurale'|'La Belle Aurore'|'Lacquer'|'Laila'|'Lakki Reddy'
+  |'Lalezar'|'Lancelot'|'Langar'|'Lateef'|'Lato'
+  |'Lavishly Yours'|'League Gothic'|'League Script'|'League Spartan'|'Leckerli One'
+  |'Ledger'|'Lekton'|'Lemon'|'Lemonada'|'Lexend'
+  |'Lexend Deca'|'Lexend Exa'|'Lexend Giga'|'Lexend Mega'|'Lexend Peta'
+  |'Lexend Tera'|'Lexend Zetta'|'Libre Barcode 128'|'Libre Barcode 128 Text'|'Libre Barcode 39'
+  |'Libre Barcode 39 Extended'|'Libre Barcode 39 Extended Text'|'Libre Barcode 39 Text'|'Libre Barcode EAN13 Text'|'Libre Baskerville'
+  |'Libre Bodoni'|'Libre Caslon Display'|'Libre Caslon Text'|'Libre Franklin'|'Licorice'
+  |'Life Savers'|'Lilita One'|'Lily Script One'|'Limelight'|'Linden Hill'
+  |'Literata'|'Liu Jian Mao Cao'|'Livvic'|'Lobster'|'Lobster Two'
+  |'Lohit Bengali'|'Lohit Tamil'|'Londrina Outline'|'Londrina Shadow'|'Londrina Sketch'
+  |'Londrina Solid'|'Long Cang'|'Lora'|'Loved by the King'|'Love Light'
+  |'Lovers Quarrel'|'Love Ya Like A Sister'|'Luckiest Guy'|'Lusitana'|'Lustria'
+  |'Luxurious Roman'|'Luxurious Script'|'Macondo'|'Macondo Swash Caps'|'Mada'
+  |'Magra'|'Maiden Orange'|'Maitree'|'Major Mono Display'|'Mako'
   |'Mali'|'Mallanna'|'Mandali'|'Manjari'|'Manrope'
   |'Mansalva'|'Manuale'|'Marcellus'|'Marcellus SC'|'Marck Script'
   |'Margarine'|'Marhey'|'Markazi Text'|'Marko One'|'Marmelad'
@@ -180,151 +185,155 @@ export type GFontName =
   |'Mirza'|'Miss Fajardose'|'Mitr'|'Mochiy Pop One'|'Mochiy Pop P One'
   |'Modak'|'Modern Antiqua'|'Mogra'|'Mohave'|'Molengo'
   |'Molle'|'Monda'|'Monofett'|'Monomaniac One'|'Monoton'
-  |'Monsieur La Doulaise'|'Montaga'|'Montagu Slab'|'MonteCarlo'|'Montserrat'
-  |'Montserrat Alternates'|'Montserrat Subrayada'|'Moo Lah Lah'|'Moon Dance'|'Moul'
-  |'Moulpali'|'Mouse Memoirs'|'M PLUS 1'|'M PLUS 1 Code'|'M PLUS 1p'
-  |'M PLUS 2'|'M PLUS Code Latin'|'Mr Bedfort'|'Mr Dafoe'|'Mr De Haviland'
-  |'Mrs Saint Delafield'|'Mrs Sheppards'|'Ms Madi'|'Mukta'|'Mukta Mahee'
-  |'Mukta Malar'|'Mukta Vaani'|'Mulish'|'Murecho'|'MuseoModerno'
-  |'My Soul'|'Mystery Quest'|'Nabla'|'Nanum Brush Script'|'Nanum Gothic'
-  |'Nanum Gothic Coding'|'Nanum Myeongjo'|'Nanum Pen Script'|'NATS'|'Neonderthaw'
-  |'Nerko One'|'Neucha'|'Neuton'|'New Rocker'|'News Cycle'
-  |'Newsreader'|'New Tegomin'|'Niconne'|'Niramit'|'Nixie One'
-  |'Nobile'|'Nokora'|'Norican'|'Nosifer'|'Nosifer Caps'
-  |'Notable'|'Nothing You Could Do'|'Noticia Text'|'Noto Color Emoji'|'Noto Color Emoji Compat Test'
-  |'Noto Kufi Arabic'|'Noto Music'|'Noto Naskh Arabic'|'Noto Naskh Arabic UI'|'Noto Nastaliq Urdu'
-  |'Noto Rashi Hebrew'|'Noto Sans'|'Noto Sans Adlam'|'Noto Sans Adlam Unjoined'|'Noto Sans Anatolian Hieroglyphs'
-  |'Noto Sans Arabic'|'Noto Sans Arabic UI'|'Noto Sans Armenian'|'Noto Sans Avestan'|'Noto Sans Balinese'
-  |'Noto Sans Bamum'|'Noto Sans Bassa Vah'|'Noto Sans Batak'|'Noto Sans Bengali'|'Noto Sans Bengali UI'
-  |'Noto Sans Bhaiksuki'|'Noto Sans Brahmi'|'Noto Sans Buginese'|'Noto Sans Buhid'|'Noto Sans Canadian Aboriginal'
-  |'Noto Sans Carian'|'Noto Sans Caucasian Albanian'|'Noto Sans Chakma'|'Noto Sans Cham'|'Noto Sans Cherokee'
-  |'Noto Sans Coptic'|'Noto Sans Cuneiform'|'Noto Sans Cypriot'|'Noto Sans Deseret'|'Noto Sans Devanagari'
-  |'Noto Sans Devanagari UI'|'Noto Sans Display'|'Noto Sans Duployan'|'Noto Sans Egyptian Hieroglyphs'|'Noto Sans Elbasan'
-  |'Noto Sans Elymaic'|'Noto Sans Ethiopic'|'Noto Sans Georgian'|'Noto Sans Glagolitic'|'Noto Sans Gothic'
-  |'Noto Sans Grantha'|'Noto Sans Gujarati'|'Noto Sans Gujarati UI'|'Noto Sans Gunjala Gondi'|'Noto Sans Gurmukhi'
-  |'Noto Sans Gurmukhi UI'|'Noto Sans Hanifi Rohingya'|'Noto Sans Hanunoo'|'Noto Sans Hatran'|'Noto Sans Hebrew'
-  |'Noto Sans HK'|'Noto Sans Imperial Aramaic'|'Noto Sans Indic Siyaq Numbers'|'Noto Sans Inscriptional Pahlavi'|'Noto Sans Inscriptional Parthian'
-  |'Noto Sans Javanese'|'Noto Sans JP'|'Noto Sans Kaithi'|'Noto Sans Kannada'|'Noto Sans Kannada UI'
-  |'Noto Sans Kayah Li'|'Noto Sans Kharoshthi'|'Noto Sans Khmer'|'Noto Sans Khmer UI'|'Noto Sans Khojki'
-  |'Noto Sans Khudawadi'|'Noto Sans KR'|'Noto Sans Lao'|'Noto Sans Lao Looped'|'Noto Sans Lao UI'
-  |'Noto Sans Lepcha'|'Noto Sans Limbu'|'Noto Sans Linear A'|'Noto Sans Linear B'|'Noto Sans Lisu'
-  |'Noto Sans Lycian'|'Noto Sans Lydian'|'Noto Sans Mahajani'|'Noto Sans Malayalam'|'Noto Sans Malayalam UI'
-  |'Noto Sans Mandaic'|'Noto Sans Manichaean'|'Noto Sans Marchen'|'Noto Sans Masaram Gondi'|'Noto Sans Math'
-  |'Noto Sans Mayan Numerals'|'Noto Sans Medefaidrin'|'Noto Sans Meetei Mayek'|'Noto Sans Mende Kikakui'|'Noto Sans Meroitic'
-  |'Noto Sans Miao'|'Noto Sans Modi'|'Noto Sans Mongolian'|'Noto Sans Mono'|'Noto Sans Mro'
-  |'Noto Sans Multani'|'Noto Sans Myanmar'|'Noto Sans Myanmar UI'|'Noto Sans Nabataean'|'Noto Sans Newa'
-  |'Noto Sans New Tai Lue'|'Noto Sans N Ko'|'Noto Sans Nushu'|'Noto Sans Ogham'|'Noto Sans Ol Chiki'
-  |'Noto Sans Old Hungarian'|'Noto Sans Old Italic'|'Noto Sans Old North Arabian'|'Noto Sans Old Permic'|'Noto Sans Old Persian'
-  |'Noto Sans Old Sogdian'|'Noto Sans Old South Arabian'|'Noto Sans Old Turkic'|'Noto Sans Oriya'|'Noto Sans Oriya UI'
-  |'Noto Sans Osage'|'Noto Sans Osmanya'|'Noto Sans Pahawh Hmong'|'Noto Sans Palmyrene'|'Noto Sans Pau Cin Hau'
-  |'Noto Sans Phags Pa'|'Noto Sans Phoenician'|'Noto Sans Psalter Pahlavi'|'Noto Sans Rejang'|'Noto Sans Runic'
-  |'Noto Sans Samaritan'|'Noto Sans Saurashtra'|'Noto Sans SC'|'Noto Sans Sharada'|'Noto Sans Shavian'
-  |'Noto Sans Siddham'|'Noto Sans Sinhala'|'Noto Sans Sinhala UI'|'Noto Sans Sogdian'|'Noto Sans Sora Sompeng'
-  |'Noto Sans Soyombo'|'Noto Sans Sundanese'|'Noto Sans Syloti Nagri'|'Noto Sans Symbols'|'Noto Sans Symbols 2'
-  |'Noto Sans Syriac'|'Noto Sans Tagalog'|'Noto Sans Tagbanwa'|'Noto Sans Tai Le'|'Noto Sans Tai Tham'
-  |'Noto Sans Tai Viet'|'Noto Sans Takri'|'Noto Sans Tamil'|'Noto Sans Tamil Supplement'|'Noto Sans Tamil UI'
-  |'Noto Sans TC'|'Noto Sans Telugu'|'Noto Sans Telugu UI'|'Noto Sans Thaana'|'Noto Sans Thai'
-  |'Noto Sans Thai Looped'|'Noto Sans Thai UI'|'Noto Sans Tifinagh'|'Noto Sans Tirhuta'|'Noto Sans Ugaritic'
-  |'Noto Sans Vai'|'Noto Sans Wancho'|'Noto Sans Warang Citi'|'Noto Sans Yi'|'Noto Sans Zanabazar Square'
-  |'Noto Serif'|'Noto Serif Ahom'|'Noto Serif Armenian'|'Noto Serif Balinese'|'Noto Serif Bengali'
-  |'Noto Serif Devanagari'|'Noto Serif Display'|'Noto Serif Dogra'|'Noto Serif Ethiopic'|'Noto Serif Georgian'
-  |'Noto Serif Grantha'|'Noto Serif Gujarati'|'Noto Serif Gurmukhi'|'Noto Serif Hebrew'|'Noto Serif HK'
-  |'Noto Serif JP'|'Noto Serif Kannada'|'Noto Serif Khmer'|'Noto Serif Khojki'|'Noto Serif KR'
-  |'Noto Serif Lao'|'Noto Serif Malayalam'|'Noto Serif Myanmar'|'Noto Serif Nyiakeng Puachue Hmong'|'Noto Serif Oriya'
-  |'Noto Serif SC'|'Noto Serif Sinhala'|'Noto Serif Tamil'|'Noto Serif Tangut'|'Noto Serif TC'
-  |'Noto Serif Telugu'|'Noto Serif Thai'|'Noto Serif Tibetan'|'Noto Serif Yezidi'|'Noto Traditional Nushu'
-  |'Nova Cut'|'Nova Flat'|'Nova Mono'|'Nova Oval'|'Nova Round'
-  |'Nova Script'|'Nova Slim'|'Nova Square'|'NTR'|'Numans'
-  |'Nunito'|'Nunito Sans'|'Nuosu SIL'|'Odibee Sans'|'Odor Mean Chey'
-  |'Offside'|'OFL Sorts Mill Goudy TT'|'Oi'|'Oldenburg'|'Old Standard TT'
-  |'Ole'|'Oleo Script'|'Oleo Script Swash Caps'|'Oooh Baby'|'Open Sans'
-  |'Oranienbaum'|'Orbitron'|'Oregano'|'Orelega One'|'Orienta'
-  |'Original Surfer'|'Oswald'|'Otomanopee One'|'Outfit'|'Overlock'
-  |'Overlock SC'|'Overpass'|'Overpass Mono'|'Over the Rainbow'|'Ovo'
-  |'Oxanium'|'Oxygen'|'Oxygen Mono'|'Pacifico'|'Padauk'
-  |'Palanquin'|'Palanquin Dark'|'Palette Mosaic'|'Pangolin'|'Paprika'
-  |'Parisienne'|'Passero One'|'Passion One'|'Passions Conflict'|'Pathway Gothic One'
-  |'Patrick Hand'|'Patrick Hand SC'|'Pattaya'|'Patua One'|'Pavanam'
-  |'Paytone One'|'Pecita'|'Peddana'|'Peralta'|'Petemoss'
-  |'Petit Formal Script'|'Petrona'|'Phetsarath'|'Philosopher'|'Piazzolla'
-  |'Piedra'|'Pinyon Script'|'Pirata One'|'Plaster'|'Play'
-  |'Playball'|'Playfair Display'|'Playfair Display SC'|'Plus Jakarta Sans'|'Podkova'
-  |'Poetsen One'|'Poiret One'|'Poller One'|'Poly'|'Pompiere'
-  |'Ponnala'|'Pontano Sans'|'Poor Story'|'Poppins'|'Porter Sans Block'
-  |'Port Lligat Sans'|'Port Lligat Slab'|'Post No Bills Colombo'|'Post No Bills Jaffna'|'Potta One'
-  |'Pragati Narrow'|'Praise'|'Prata'|'Preahvihear'|'Press Start 2P'
-  |'Pridi'|'Princess Sofia'|'Prociono'|'Prompt'|'Prosto One'
-  |'Proza Libre'|'PT Mono'|'PT Sans'|'PT Sans Caption'|'PT Sans Narrow'
-  |'PT Serif'|'PT Serif Caption'|'Public Sans'|'Puppies Play'|'Puritan'
-  |'Purple Purse'|'Pushster'|'Qahiri'|'Quando'|'Quantico'
-  |'Quattrocento'|'Quattrocento Sans'|'Questrial'|'Quicksand'|'Quintessential'
-  |'Qwigley'|'Qwitcher Grypen'|'Racing Sans One'|'Radio Canada'|'Radley'
-  |'Rajdhani'|'Rakkas'|'Raleway'|'Raleway Dots'|'Ramabhadra'
-  |'Ramaraja'|'Rambla'|'Rammetto One'|'Rampart One'|'Ranchers'
+  |'Monsieur La Doulaise'|'Montaga'|'Montagu Slab'|'MonteCarlo'|'Montez'
+  |'Montserrat'|'Montserrat Alternates'|'Montserrat Subrayada'|'Moo Lah Lah'|'Moon Dance'
+  |'Moul'|'Moulpali'|'Mountains of Christmas'|'Mouse Memoirs'|'M PLUS 1'
+  |'M PLUS 1 Code'|'M PLUS 1p'|'M PLUS 2'|'M PLUS Code Latin'|'Mr Bedfort'
+  |'Mr Dafoe'|'Mr De Haviland'|'Mrs Saint Delafield'|'Mrs Sheppards'|'Ms Madi'
+  |'Mukta'|'Mukta Mahee'|'Mukta Malar'|'Mukta Vaani'|'Mulish'
+  |'Murecho'|'MuseoModerno'|'My Soul'|'Mystery Quest'|'Nabla'
+  |'Nanum Brush Script'|'Nanum Gothic'|'Nanum Gothic Coding'|'Nanum Myeongjo'|'Nanum Pen Script'
+  |'NATS'|'Neonderthaw'|'Nerko One'|'Neucha'|'Neuton'
+  |'New Rocker'|'News Cycle'|'Newsreader'|'New Tegomin'|'Niconne'
+  |'Niramit'|'Nixie One'|'Nobile'|'Nokora'|'Norican'
+  |'Nosifer'|'Nosifer Caps'|'Notable'|'Nothing You Could Do'|'Noticia Text'
+  |'Noto Color Emoji'|'Noto Color Emoji Compat Test'|'Noto Kufi Arabic'|'Noto Music'|'Noto Naskh Arabic'
+  |'Noto Naskh Arabic UI'|'Noto Nastaliq Urdu'|'Noto Rashi Hebrew'|'Noto Sans'|'Noto Sans Adlam'
+  |'Noto Sans Adlam Unjoined'|'Noto Sans Anatolian Hieroglyphs'|'Noto Sans Arabic'|'Noto Sans Arabic UI'|'Noto Sans Armenian'
+  |'Noto Sans Avestan'|'Noto Sans Balinese'|'Noto Sans Bamum'|'Noto Sans Bassa Vah'|'Noto Sans Batak'
+  |'Noto Sans Bengali'|'Noto Sans Bengali UI'|'Noto Sans Bhaiksuki'|'Noto Sans Brahmi'|'Noto Sans Buginese'
+  |'Noto Sans Buhid'|'Noto Sans Canadian Aboriginal'|'Noto Sans Carian'|'Noto Sans Caucasian Albanian'|'Noto Sans Chakma'
+  |'Noto Sans Cham'|'Noto Sans Cherokee'|'Noto Sans Coptic'|'Noto Sans Cuneiform'|'Noto Sans Cypriot'
+  |'Noto Sans Deseret'|'Noto Sans Devanagari'|'Noto Sans Devanagari UI'|'Noto Sans Display'|'Noto Sans Duployan'
+  |'Noto Sans Egyptian Hieroglyphs'|'Noto Sans Elbasan'|'Noto Sans Elymaic'|'Noto Sans Ethiopic'|'Noto Sans Georgian'
+  |'Noto Sans Glagolitic'|'Noto Sans Gothic'|'Noto Sans Grantha'|'Noto Sans Gujarati'|'Noto Sans Gujarati UI'
+  |'Noto Sans Gunjala Gondi'|'Noto Sans Gurmukhi'|'Noto Sans Gurmukhi UI'|'Noto Sans Hanifi Rohingya'|'Noto Sans Hanunoo'
+  |'Noto Sans Hatran'|'Noto Sans Hebrew'|'Noto Sans HK'|'Noto Sans Imperial Aramaic'|'Noto Sans Indic Siyaq Numbers'
+  |'Noto Sans Inscriptional Pahlavi'|'Noto Sans Inscriptional Parthian'|'Noto Sans Javanese'|'Noto Sans JP'|'Noto Sans Kaithi'
+  |'Noto Sans Kannada'|'Noto Sans Kannada UI'|'Noto Sans Kayah Li'|'Noto Sans Kharoshthi'|'Noto Sans Khmer'
+  |'Noto Sans Khmer UI'|'Noto Sans Khojki'|'Noto Sans Khudawadi'|'Noto Sans KR'|'Noto Sans Lao'
+  |'Noto Sans Lao Looped'|'Noto Sans Lao UI'|'Noto Sans Lepcha'|'Noto Sans Limbu'|'Noto Sans Linear A'
+  |'Noto Sans Linear B'|'Noto Sans Lisu'|'Noto Sans Lycian'|'Noto Sans Lydian'|'Noto Sans Mahajani'
+  |'Noto Sans Malayalam'|'Noto Sans Malayalam UI'|'Noto Sans Mandaic'|'Noto Sans Manichaean'|'Noto Sans Marchen'
+  |'Noto Sans Masaram Gondi'|'Noto Sans Math'|'Noto Sans Mayan Numerals'|'Noto Sans Medefaidrin'|'Noto Sans Meetei Mayek'
+  |'Noto Sans Mende Kikakui'|'Noto Sans Meroitic'|'Noto Sans Miao'|'Noto Sans Modi'|'Noto Sans Mongolian'
+  |'Noto Sans Mono'|'Noto Sans Mro'|'Noto Sans Multani'|'Noto Sans Myanmar'|'Noto Sans Myanmar UI'
+  |'Noto Sans Nabataean'|'Noto Sans Newa'|'Noto Sans New Tai Lue'|'Noto Sans N Ko'|'Noto Sans Nushu'
+  |'Noto Sans Ogham'|'Noto Sans Ol Chiki'|'Noto Sans Old Hungarian'|'Noto Sans Old Italic'|'Noto Sans Old North Arabian'
+  |'Noto Sans Old Permic'|'Noto Sans Old Persian'|'Noto Sans Old Sogdian'|'Noto Sans Old South Arabian'|'Noto Sans Old Turkic'
+  |'Noto Sans Oriya'|'Noto Sans Oriya UI'|'Noto Sans Osage'|'Noto Sans Osmanya'|'Noto Sans Pahawh Hmong'
+  |'Noto Sans Palmyrene'|'Noto Sans Pau Cin Hau'|'Noto Sans Phags Pa'|'Noto Sans Phoenician'|'Noto Sans Psalter Pahlavi'
+  |'Noto Sans Rejang'|'Noto Sans Runic'|'Noto Sans Samaritan'|'Noto Sans Saurashtra'|'Noto Sans SC'
+  |'Noto Sans Sharada'|'Noto Sans Shavian'|'Noto Sans Siddham'|'Noto Sans Sinhala'|'Noto Sans Sinhala UI'
+  |'Noto Sans Sogdian'|'Noto Sans Sora Sompeng'|'Noto Sans Soyombo'|'Noto Sans Sundanese'|'Noto Sans Syloti Nagri'
+  |'Noto Sans Symbols'|'Noto Sans Symbols 2'|'Noto Sans Syriac'|'Noto Sans Tagalog'|'Noto Sans Tagbanwa'
+  |'Noto Sans Tai Le'|'Noto Sans Tai Tham'|'Noto Sans Tai Viet'|'Noto Sans Takri'|'Noto Sans Tamil'
+  |'Noto Sans Tamil Supplement'|'Noto Sans Tamil UI'|'Noto Sans TC'|'Noto Sans Telugu'|'Noto Sans Telugu UI'
+  |'Noto Sans Thaana'|'Noto Sans Thai'|'Noto Sans Thai Looped'|'Noto Sans Thai UI'|'Noto Sans Tifinagh'
+  |'Noto Sans Tirhuta'|'Noto Sans Ugaritic'|'Noto Sans Vai'|'Noto Sans Wancho'|'Noto Sans Warang Citi'
+  |'Noto Sans Yi'|'Noto Sans Zanabazar Square'|'Noto Serif'|'Noto Serif Ahom'|'Noto Serif Armenian'
+  |'Noto Serif Balinese'|'Noto Serif Bengali'|'Noto Serif Devanagari'|'Noto Serif Display'|'Noto Serif Dogra'
+  |'Noto Serif Ethiopic'|'Noto Serif Georgian'|'Noto Serif Grantha'|'Noto Serif Gujarati'|'Noto Serif Gurmukhi'
+  |'Noto Serif Hebrew'|'Noto Serif HK'|'Noto Serif JP'|'Noto Serif Kannada'|'Noto Serif Khmer'
+  |'Noto Serif Khojki'|'Noto Serif KR'|'Noto Serif Lao'|'Noto Serif Malayalam'|'Noto Serif Myanmar'
+  |'Noto Serif Nyiakeng Puachue Hmong'|'Noto Serif Oriya'|'Noto Serif SC'|'Noto Serif Sinhala'|'Noto Serif Tamil'
+  |'Noto Serif Tangut'|'Noto Serif TC'|'Noto Serif Telugu'|'Noto Serif Thai'|'Noto Serif Tibetan'
+  |'Noto Serif Yezidi'|'Noto Traditional Nushu'|'Nova Cut'|'Nova Flat'|'Nova Mono'
+  |'Nova Oval'|'Nova Round'|'Nova Script'|'Nova Slim'|'Nova Square'
+  |'NTR'|'Numans'|'Nunito'|'Nunito Sans'|'Nuosu SIL'
+  |'Odibee Sans'|'Odor Mean Chey'|'Offside'|'OFL Sorts Mill Goudy TT'|'Oi'
+  |'Oldenburg'|'Old Standard TT'|'Ole'|'Oleo Script'|'Oleo Script Swash Caps'
+  |'Oooh Baby'|'Open Sans'|'Open Sans Condensed'|'Oranienbaum'|'Orbitron'
+  |'Oregano'|'Orelega One'|'Orienta'|'Original Surfer'|'Oswald'
+  |'Otomanopee One'|'Outfit'|'Overlock'|'Overlock SC'|'Overpass'
+  |'Overpass Mono'|'Over the Rainbow'|'Ovo'|'Oxanium'|'Oxygen'
+  |'Oxygen Mono'|'Pacifico'|'Padauk'|'Palanquin'|'Palanquin Dark'
+  |'Palette Mosaic'|'Pangolin'|'Paprika'|'Parisienne'|'Passero One'
+  |'Passion One'|'Passions Conflict'|'Pathway Gothic One'|'Patrick Hand'|'Patrick Hand SC'
+  |'Pattaya'|'Patua One'|'Pavanam'|'Paytone One'|'Pecita'
+  |'Peddana'|'Peralta'|'Permanent Marker'|'Petemoss'|'Petit Formal Script'
+  |'Petrona'|'Phetsarath'|'Philosopher'|'Piazzolla'|'Piedra'
+  |'Pinyon Script'|'Pirata One'|'Plaster'|'Play'|'Playball'
+  |'Playfair Display'|'Playfair Display SC'|'Plus Jakarta Sans'|'Podkova'|'Poetsen One'
+  |'Poiret One'|'Poller One'|'Poly'|'Pompiere'|'Ponnala'
+  |'Pontano Sans'|'Poor Story'|'Poppins'|'Porter Sans Block'|'Port Lligat Sans'
+  |'Port Lligat Slab'|'Post No Bills Colombo'|'Post No Bills Jaffna'|'Potta One'|'Pragati Narrow'
+  |'Praise'|'Prata'|'Preahvihear'|'Press Start 2P'|'Pridi'
+  |'Princess Sofia'|'Prociono'|'Prompt'|'Prosto One'|'Proza Libre'
+  |'PT Mono'|'PT Sans'|'PT Sans Caption'|'PT Sans Narrow'|'PT Serif'
+  |'PT Serif Caption'|'Public Sans'|'Puppies Play'|'Puritan'|'Purple Purse'
+  |'Pushster'|'Qahiri'|'Quando'|'Quantico'|'Quattrocento'
+  |'Quattrocento Sans'|'Questrial'|'Quicksand'|'Quintessential'|'Qwigley'
+  |'Qwitcher Grypen'|'Racing Sans One'|'Radio Canada'|'Radley'|'Rajdhani'
+  |'Rakkas'|'Raleway'|'Raleway Dots'|'Ramabhadra'|'Ramaraja'
+  |'Rambla'|'Rammetto One'|'Rampart One'|'Ranchers'|'Rancho'
   |'Ranga'|'Rasa'|'Rationale'|'Ravi Prakash'|'Readex Pro'
   |'Recursive'|'Redacted'|'Redacted Script'|'Red Hat Display'|'Red Hat Mono'
-  |'Red Hat Text'|'Red Rose'|'Reem Kufi'|'Reem Kufi Fun'|'Reem Kufi Ink'
-  |'Reenie Beanie'|'Reggae One'|'Revalia'|'Rhodium Libre'|'Ribeye'
-  |'Ribeye Marrow'|'Righteous'|'Risque'|'Road Rage'|'Roboto Flex'
-  |'Roboto Serif'|'Rock 3D'|'RocknRoll One'|'Rokkitt'|'Romanesco'
-  |'Ropa Sans'|'Rosario'|'Rosarivo'|'Rouge Script'|'Rowdies'
-  |'Rozha One'|'Rubik'|'Rubik Beastly'|'Rubik Bubbles'|'Rubik Burned'
-  |'Rubik Dirt'|'Rubik Distressed'|'Rubik Glitch'|'Rubik Iso'|'Rubik Marker Hatch'
-  |'Rubik Maze'|'Rubik Microbe'|'Rubik Mono One'|'Rubik Moonrocks'|'Rubik One'
-  |'Rubik Puddles'|'Rubik Wet Paint'|'Ruda'|'Rufina'|'Ruge Boogie'
-  |'Ruluko'|'Rum Raisin'|'RU Serius'|'Ruslan Display'|'Russo One'
-  |'Ruthie'|'Rye'|'Sacramento'|'Sahitya'|'Sail'
-  |'Saira'|'Saira Condensed'|'Saira Extra Condensed'|'Saira Semi Condensed'|'Saira Stencil One'
-  |'Salsa'|'Sanchez'|'Sancreek'|'Sansation'|'Sansita'
-  |'Sansita One'|'Sansita Swashed'|'Sarabun'|'Sarala'|'Sarina'
-  |'Sarpanch'|'Sassy Frass'|'Sawarabi Mincho'|'Scada'|'Scheherazade New'
-  |'Scope One'|'Seaweed Script'|'Secular One'|'Sedan'|'Sedan SC'
-  |'Sedgwick Ave'|'Sedgwick Ave Display'|'Sen'|'Send Flowers'|'Sevillana'
-  |'Seymour One'|'Shadows Into Light'|'Shadows Into Light Two'|'Shalimar'|'Shanti'
-  |'Share'|'Share Tech'|'Share Tech Mono'|'Shippori Antique'|'Shippori Antique B1'
-  |'Shippori Mincho'|'Shippori Mincho B1'|'Shizuru'|'Shojumaru'|'Short Stack'
-  |'Shrikhand'|'Siemreap'|'Sigmar One'|'Signika'|'Signika Negative'
-  |'Signika Negative SC'|'Signika SC'|'Silkscreen'|'Simonetta'|'Single Day'
-  |'Sintony'|'Sirin Stencil'|'Sitara'|'Six Caps'|'Skranji'
-  |'Slabo 13px'|'Slabo 27px'|'Slackside One'|'Smooch'|'Smooch Sans'
+  |'Red Hat Text'|'Redressed'|'Red Rose'|'Reem Kufi'|'Reem Kufi Fun'
+  |'Reem Kufi Ink'|'Reenie Beanie'|'Reggae One'|'Revalia'|'Rhodium Libre'
+  |'Ribeye'|'Ribeye Marrow'|'Righteous'|'Risque'|'Road Rage'
+  |'Roboto'|'Roboto Flex'|'Roboto Mono'|'Roboto Serif'|'Roboto Slab'
+  |'Rochester'|'Rock 3D'|'RocknRoll One'|'Rock Salt'|'Rokkitt'
+  |'Romanesco'|'Ropa Sans'|'Rosario'|'Rosarivo'|'Rouge Script'
+  |'Rowdies'|'Rozha One'|'Rubik'|'Rubik Beastly'|'Rubik Bubbles'
+  |'Rubik Burned'|'Rubik Dirt'|'Rubik Distressed'|'Rubik Glitch'|'Rubik Iso'
+  |'Rubik Marker Hatch'|'Rubik Maze'|'Rubik Microbe'|'Rubik Mono One'|'Rubik Moonrocks'
+  |'Rubik One'|'Rubik Puddles'|'Rubik Wet Paint'|'Ruda'|'Rufina'
+  |'Ruge Boogie'|'Ruluko'|'Rum Raisin'|'RU Serius'|'Ruslan Display'
+  |'Russo One'|'Ruthie'|'Rye'|'Sacramento'|'Sahitya'
+  |'Sail'|'Saira'|'Saira Condensed'|'Saira Extra Condensed'|'Saira Semi Condensed'
+  |'Saira Stencil One'|'Salsa'|'Sanchez'|'Sancreek'|'Sansation'
+  |'Sansita'|'Sansita One'|'Sansita Swashed'|'Sarabun'|'Sarala'
+  |'Sarina'|'Sarpanch'|'Sassy Frass'|'Satisfy'|'Sawarabi Mincho'
+  |'Scada'|'Scheherazade New'|'Schoolbell'|'Scope One'|'Seaweed Script'
+  |'Secular One'|'Sedan'|'Sedan SC'|'Sedgwick Ave'|'Sedgwick Ave Display'
+  |'Sen'|'Send Flowers'|'Sevillana'|'Seymour One'|'Shadows Into Light'
+  |'Shadows Into Light Two'|'Shalimar'|'Shanti'|'Share'|'Share Tech'
+  |'Share Tech Mono'|'Shippori Antique'|'Shippori Antique B1'|'Shippori Mincho'|'Shippori Mincho B1'
+  |'Shizuru'|'Shojumaru'|'Short Stack'|'Shrikhand'|'Siemreap'
+  |'Sigmar One'|'Signika'|'Signika Negative'|'Signika Negative SC'|'Signika SC'
+  |'Silkscreen'|'Simonetta'|'Single Day'|'Sintony'|'Sirin Stencil'
+  |'Sitara'|'Six Caps'|'Skranji'|'Slabo 13px'|'Slabo 27px'
+  |'Slackey'|'Slackside One'|'Smokum'|'Smooch'|'Smooch Sans'
   |'Smythe'|'Sniglet'|'Snippet'|'Snowburst One'|'Sofadi One'
   |'Sofia'|'Sofia Sans'|'Solway'|'Sometype Mono'|'Song Myung'
   |'Sono'|'Sonsie One'|'Sora'|'Sorts Mill Goudy'|'Source Code Pro'
   |'Source Sans 3'|'Source Sans Pro'|'Source Serif 4'|'Source Serif Pro'|'Space Grotesk'
-  |'Space Mono'|'Spectral'|'Spectral SC'|'Spicy Rice'|'Spinnaker'
-  |'Spirax'|'Splash'|'Spline Sans'|'Spline Sans Mono'|'Squada One'
-  |'Square Peg'|'Sree Krushnadevaraya'|'Sriracha'|'Srisakdi'|'Staatliches'
-  |'Stalemate'|'Stalinist One'|'Stardos Stencil'|'Stick'|'Stick No Bills'
-  |'Stint Ultra Condensed'|'Stint Ultra Expanded'|'STIX Two Math'|'STIX Two Text'|'Stoke'
-  |'Strait'|'Strong'|'Style Script'|'Stylish'|'Sue Ellen Francisco'
-  |'Suez One'|'Sulphur Point'|'Sumana'|'Sunflower'|'Supermercado One'
-  |'Sura'|'Suranna'|'Suravaram'|'Suwannaphum'|'Swanky and Moo Moo'
-  |'Syne'|'Syne Mono'|'Syne Tactile'|'Tai Heritage Pro'|'Tajawal'
-  |'Tangerine'|'Tapestry'|'Taprom'|'Tauri'|'Taviraj'
-  |'Teko'|'Telex'|'Tenali Ramakrishna'|'Tenor Sans'|'Text Me One'
-  |'Texturina'|'Thabit'|'Thasadith'|'The Girl Next Door'|'The Nautigal'
-  |'Tienne'|'Tillana'|'Timmana'|'Tiro Bangla'|'Tiro Devanagari Hindi'
-  |'Tiro Devanagari Marathi'|'Tiro Devanagari Sanskrit'|'Tiro Gurmukhi'|'Tiro Kannada'|'Tiro Tamil'
-  |'Tiro Telugu'|'Titan One'|'Titillium Web'|'Tomorrow'|'Tourney'
-  |'Trade Winds'|'Train One'|'Trirong'|'Trispace'|'Trocchi'
-  |'Trochut'|'Truculenta'|'Trykker'|'Tsukimi Rounded'|'Tuffy'
-  |'Tulpen One'|'Turret Road'|'Twinkle Star'|'Uchen'|'Uncial Antiqua'
-  |'Underdog'|'Unica One'|'UnifrakturCook'|'UnifrakturMaguntia'|'Unlock'
-  |'Unna'|'Updock'|'Urbanist'|'Vampiro One'|'Varela'
-  |'Varela Round'|'Varta'|'Vast Shadow'|'Vazirmatn'|'Vesper Libre'
-  |'Viaoda Libre'|'Vibes'|'Vibur'|'Vidaloka'|'Viga'
-  |'Voces'|'Volkhov'|'Vollkorn'|'Vollkorn SC'|'Voltaire'
-  |'VT323'|'Vujahday Script'|'Waiting for the Sunrise'|'Wallpoet'|'Warnes'
+  |'Space Mono'|'Special Elite'|'Spectral'|'Spectral SC'|'Spicy Rice'
+  |'Spinnaker'|'Spirax'|'Splash'|'Spline Sans'|'Spline Sans Mono'
+  |'Squada One'|'Square Peg'|'Sree Krushnadevaraya'|'Sriracha'|'Srisakdi'
+  |'Staatliches'|'Stalemate'|'Stalinist One'|'Stardos Stencil'|'Stick'
+  |'Stick No Bills'|'Stint Ultra Condensed'|'Stint Ultra Expanded'|'STIX Two Math'|'STIX Two Text'
+  |'Stoke'|'Strait'|'Strong'|'Style Script'|'Stylish'
+  |'Sue Ellen Francisco'|'Suez One'|'Sulphur Point'|'Sumana'|'Sunflower'
+  |'Sunshiney'|'Supermercado One'|'Sura'|'Suranna'|'Suravaram'
+  |'Suwannaphum'|'Swanky and Moo Moo'|'Syncopate'|'Syne'|'Syne Mono'
+  |'Syne Tactile'|'Tai Heritage Pro'|'Tajawal'|'Tangerine'|'Tapestry'
+  |'Taprom'|'Tauri'|'Taviraj'|'Teko'|'Telex'
+  |'Tenali Ramakrishna'|'Tenor Sans'|'Text Me One'|'Texturina'|'Thabit'
+  |'Thasadith'|'The Girl Next Door'|'The Nautigal'|'Tienne'|'Tillana'
+  |'Timmana'|'Tinos'|'Tiro Bangla'|'Tiro Devanagari Hindi'|'Tiro Devanagari Marathi'
+  |'Tiro Devanagari Sanskrit'|'Tiro Gurmukhi'|'Tiro Kannada'|'Tiro Tamil'|'Tiro Telugu'
+  |'Titan One'|'Titillium Web'|'Tomorrow'|'Tourney'|'Trade Winds'
+  |'Train One'|'Trirong'|'Trispace'|'Trocchi'|'Trochut'
+  |'Truculenta'|'Trykker'|'Tsukimi Rounded'|'Tuffy'|'Tulpen One'
+  |'Turret Road'|'Twinkle Star'|'Ubuntu'|'Ubuntu Condensed'|'Ubuntu Mono'
+  |'Uchen'|'Ultra'|'Uncial Antiqua'|'Underdog'|'Unica One'
+  |'UnifrakturCook'|'UnifrakturMaguntia'|'Unkempt'|'Unlock'|'Unna'
+  |'Updock'|'Urbanist'|'Vampiro One'|'Varela'|'Varela Round'
+  |'Varta'|'Vast Shadow'|'Vazirmatn'|'Vesper Libre'|'Viaoda Libre'
+  |'Vibes'|'Vibur'|'Vidaloka'|'Viga'|'Voces'
+  |'Volkhov'|'Vollkorn'|'Vollkorn SC'|'Voltaire'|'VT323'
+  |'Vujahday Script'|'Waiting for the Sunrise'|'Wallpoet'|'Walter Turncoat'|'Warnes'
   |'Water Brush'|'Waterfall'|'Wellfleet'|'Wendy One'|'Whisper'
   |'WindSong'|'Wire One'|'Work Sans'|'Xanh Mono'|'Yaldevi'
-  |'Yaldevi Colombo'|'Yanone Kaffeesatz'|'Yantramanav'|'Yatra One'|'Yeon Sung'
-  |'Yeseva One'|'Yesteryear'|'Yinmar'|'Yomogi'|'Yrsa'
-  |'Yuji Boku'|'Yuji Hentaigana Akari'|'Yuji Hentaigana Akebono'|'Yuji Mai'|'Yuji Syuku'
-  |'Yusei Magic'|'ZCOOL KuaiLe'|'ZCOOL QingKe HuangYou'|'ZCOOL XiaoWei'|'Zen Antique'
-  |'Zen Antique Soft'|'Zen Dots'|'Zen Kaku Gothic Antique'|'Zen Kaku Gothic New'|'Zen Kurenaido'
-  |'Zen Loop'|'Zen Maru Gothic'|'Zen Old Mincho'|'Zen Tokyo Zoo'|'Zeyada'
-  |'Zhi Mang Xing'|'Zilla Slab'|'Zilla Slab Highlight'|'Ubuntu'|'Ubuntu Condensed'
-  |'Ubuntu Mono'|'Roboto'|'Roboto Mono'|'Roboto Slab';
+  |'Yaldevi Colombo'|'Yanone Kaffeesatz'|'Yantramanav'|'Yatra One'|'Yellowtail'
+  |'Yeon Sung'|'Yeseva One'|'Yesteryear'|'Yinmar'|'Yomogi'
+  |'Yrsa'|'Yuji Boku'|'Yuji Hentaigana Akari'|'Yuji Hentaigana Akebono'|'Yuji Mai'
+  |'Yuji Syuku'|'Yusei Magic'|'ZCOOL KuaiLe'|'ZCOOL QingKe HuangYou'|'ZCOOL XiaoWei'
+  |'Zen Antique'|'Zen Antique Soft'|'Zen Dots'|'Zen Kaku Gothic Antique'|'Zen Kaku Gothic New'
+  |'Zen Kurenaido'|'Zen Loop'|'Zen Maru Gothic'|'Zen Old Mincho'|'Zen Tokyo Zoo'
+  |'Zeyada'|'Zhi Mang Xing'|'Zilla Slab'|'Zilla Slab Highlight';
 
 type WeightOf_ABeeZee = '400'|'regular';
 type WeightOf_Abel = '400'|'regular';
@@ -332,6 +341,7 @@ type WeightOf_Abhaya_Libre = '400'|'500'|'600'|'700'|'800'|'regular'|'medium'|'s
 type WeightOf_Aboreto = '400'|'regular';
 type WeightOf_Abril_Fatface = '400'|'regular';
 type WeightOf_Abyssinica_SIL = '400'|'regular';
+type WeightOf_Aclonica = '400'|'regular';
 type WeightOf_Acme = '400'|'regular';
 type WeightOf_Actor = '400'|'regular';
 type WeightOf_Adamina = '400'|'regular';
@@ -416,6 +426,7 @@ type WeightOf_Aref_Ruqaa_Ink = '400'|'700'|'regular'|'bold';
 type WeightOf_Are_You_Serious = '400'|'regular';
 type WeightOf_Arima = StringIntRange<10,70,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Arima_Madurai = '100'|'200'|'300'|'400'|'500'|'700'|'800'|'900'|'thin'|'extralight'|'light'|'regular'|'medium'|'bold'|'extrabold'|'black';
+type WeightOf_Arimo = StringIntRange<40,70,1>|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Arizonia = '400'|'regular';
 type WeightOf_Armata = '400'|'regular';
 type WeightOf_Arsenal = '400'|'700'|'regular'|'bold';
@@ -554,6 +565,7 @@ type WeightOf_Cairo = StringIntRange<20,100,1>|'extralight'|'light'|'regular'|'m
 type WeightOf_Cairo_Play = StringIntRange<20,100,1>|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Caladea = '400'|'700'|'regular'|'bold';
 type WeightOf_Calistoga = '400'|'regular';
+type WeightOf_Calligraffitti = '400'|'regular';
 type WeightOf_Cambay = '400'|'700'|'regular'|'bold';
 type WeightOf_Cambo = '400'|'regular';
 type WeightOf_Candal = '400'|'regular';
@@ -589,7 +601,9 @@ type WeightOf_Chelsea_Market = '400'|'regular';
 type WeightOf_Chenla = '400'|'regular';
 type WeightOf_Cherish = '400'|'regular';
 type WeightOf_Cherry_Bomb_One = '400'|'regular';
+type WeightOf_Cherry_Cream_Soda = '400'|'regular';
 type WeightOf_Cherry_Swash = '400'|'700'|'regular'|'bold';
+type WeightOf_Chewy = '400'|'regular';
 type WeightOf_Chicle = '400'|'regular';
 type WeightOf_Chilanka = '400'|'regular';
 type WeightOf_Chivo = '300'|'400'|'700'|'900'|'light'|'regular'|'bold'|'black';
@@ -608,6 +622,7 @@ type WeightOf_Comfortaa = StringIntRange<30,70,1>|'light'|'regular'|'medium'|'se
 type WeightOf_Comforter = '400'|'regular';
 type WeightOf_Comforter_Brush = '400'|'regular';
 type WeightOf_Comic_Neue = '300'|'400'|'700'|'light'|'regular'|'bold';
+type WeightOf_Coming_Soon = '400'|'regular';
 type WeightOf_Commissioner = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Concert_One = '400'|'regular';
 type WeightOf_Condiment = '400'|'regular';
@@ -626,13 +641,17 @@ type WeightOf_Cormorant_Unicase = '300'|'400'|'500'|'600'|'700'|'light'|'regular
 type WeightOf_Cormorant_Upright = '300'|'400'|'500'|'600'|'700'|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Courgette = '400'|'regular';
 type WeightOf_Courier_Prime = '400'|'700'|'regular'|'bold';
+type WeightOf_Cousine = '400'|'700'|'regular'|'bold';
 type WeightOf_Coustard = '400'|'900'|'regular'|'black';
 type WeightOf_Covered_By_Your_Grace = '400'|'regular';
+type WeightOf_Crafty_Girls = '400'|'regular';
 type WeightOf_Creepster = '400'|'regular';
+type WeightOf_Creepster_Caps = '400'|'regular';
 type WeightOf_Crete_Round = '400'|'regular';
 type WeightOf_Crimson_Pro = StringIntRange<20,90,1>|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Crimson_Text = '400'|'600'|'700'|'regular'|'semibold'|'bold';
 type WeightOf_Croissant_One = '400'|'regular';
+type WeightOf_Crushed = '400'|'regular';
 type WeightOf_Cuprum = StringIntRange<40,70,1>|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Cute_Font = '400'|'regular';
 type WeightOf_Cutive = '400'|'regular';
@@ -748,6 +767,7 @@ type WeightOf_Flow_Circular = '400'|'regular';
 type WeightOf_Flow_Rounded = '400'|'regular';
 type WeightOf_Foldit = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Fondamento = '400'|'regular';
+type WeightOf_Fontdiner_Swanky = '400'|'regular';
 type WeightOf_Forum = '400'|'regular';
 type WeightOf_Fragment_Mono = '400'|'regular';
 type WeightOf_Francois_One = '400'|'regular';
@@ -853,6 +873,7 @@ type WeightOf_Hind_Mysuru = '300'|'400'|'500'|'600'|'700'|'light'|'regular'|'med
 type WeightOf_Hind_Siliguri = '300'|'400'|'500'|'600'|'700'|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Hind_Vadodara = '300'|'400'|'500'|'600'|'700'|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Holtwood_One_SC = '400'|'regular';
+type WeightOf_Homemade_Apple = '400'|'regular';
 type WeightOf_Homenaje = '400'|'regular';
 type WeightOf_Hubballi = '400'|'regular';
 type WeightOf_Hurricane = '400'|'regular';
@@ -894,6 +915,7 @@ type WeightOf_Inria_Serif = '300'|'400'|'700'|'light'|'regular'|'bold';
 type WeightOf_Inspiration = '400'|'regular';
 type WeightOf_Inter = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Inter_Tight = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
+type WeightOf_Irish_Grover = '400'|'regular';
 type WeightOf_Island_Moments = '400'|'regular';
 type WeightOf_Istok_Web = '400'|'700'|'regular'|'bold';
 type WeightOf_Italiana = '400'|'regular';
@@ -913,12 +935,19 @@ type WeightOf_Josefin_Sans = StringIntRange<10,70,1>|'thin'|'extralight'|'light'
 type WeightOf_Josefin_Slab = StringIntRange<10,70,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Jost = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Joti_One = '400'|'regular';
+type WeightOf_jsMath_cmbx10 = '400'|'regular';
+type WeightOf_jsMath_cmex10 = '400'|'regular';
+type WeightOf_jsMath_cmmi10 = '400'|'regular';
+type WeightOf_jsMath_cmr10 = '400'|'regular';
+type WeightOf_jsMath_cmsy10 = '400'|'regular';
+type WeightOf_jsMath_cmti10 = '400'|'regular';
 type WeightOf_Jua = '400'|'regular';
 type WeightOf_Judson = '400'|'700'|'regular'|'bold';
 type WeightOf_Julee = '400'|'regular';
 type WeightOf_Julius_Sans_One = '400'|'regular';
 type WeightOf_Junge = '400'|'regular';
 type WeightOf_Jura = StringIntRange<30,70,1>|'light'|'regular'|'medium'|'semibold'|'bold';
+type WeightOf_Just_Another_Hand = '400'|'regular';
 type WeightOf_Just_Me_Again_Down_Here = '400'|'regular';
 type WeightOf_K2D = '100'|'200'|'300'|'400'|'500'|'600'|'700'|'800'|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold';
 type WeightOf_Kadwa = '400'|'700'|'regular'|'bold';
@@ -958,8 +987,11 @@ type WeightOf_Kodchasan = '200'|'300'|'400'|'500'|'600'|'700'|'extralight'|'ligh
 type WeightOf_KoHo = '200'|'300'|'400'|'500'|'600'|'700'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Koh_Santepheap = '100'|'300'|'400'|'700'|'900'|'thin'|'light'|'regular'|'bold'|'black';
 type WeightOf_Kolker_Brush = '400'|'regular';
+type WeightOf_Kosugi = '400'|'regular';
+type WeightOf_Kosugi_Maru = '400'|'regular';
 type WeightOf_Kotta_One = '400'|'regular';
 type WeightOf_Koulen = '400'|'regular';
+type WeightOf_Kranky = '400'|'regular';
 type WeightOf_Kreon = StringIntRange<30,70,1>|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Kristi = '400'|'regular';
 type WeightOf_Krona_One = '400'|'regular';
@@ -1030,6 +1062,7 @@ type WeightOf_Loved_by_the_King = '400'|'regular';
 type WeightOf_Love_Light = '400'|'regular';
 type WeightOf_Lovers_Quarrel = '400'|'regular';
 type WeightOf_Love_Ya_Like_A_Sister = '400'|'regular';
+type WeightOf_Luckiest_Guy = '400'|'regular';
 type WeightOf_Lusitana = '400'|'700'|'regular'|'bold';
 type WeightOf_Lustria = '400'|'regular';
 type WeightOf_Luxurious_Roman = '400'|'regular';
@@ -1038,6 +1071,7 @@ type WeightOf_Macondo = '400'|'regular';
 type WeightOf_Macondo_Swash_Caps = '400'|'regular';
 type WeightOf_Mada = '200'|'300'|'400'|'500'|'600'|'700'|'900'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'black';
 type WeightOf_Magra = '400'|'700'|'regular'|'bold';
+type WeightOf_Maiden_Orange = '400'|'regular';
 type WeightOf_Maitree = '200'|'300'|'400'|'500'|'600'|'700'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Major_Mono_Display = '400'|'regular';
 type WeightOf_Mako = '400'|'regular';
@@ -1110,6 +1144,7 @@ type WeightOf_Monsieur_La_Doulaise = '400'|'regular';
 type WeightOf_Montaga = '400'|'regular';
 type WeightOf_Montagu_Slab = StringIntRange<10,70,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_MonteCarlo = '400'|'regular';
+type WeightOf_Montez = '400'|'regular';
 type WeightOf_Montserrat = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Montserrat_Alternates = '100'|'200'|'300'|'400'|'500'|'600'|'700'|'800'|'900'|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Montserrat_Subrayada = '400'|'700'|'regular'|'bold';
@@ -1117,6 +1152,7 @@ type WeightOf_Moo_Lah_Lah = '400'|'regular';
 type WeightOf_Moon_Dance = '400'|'regular';
 type WeightOf_Moul = '400'|'regular';
 type WeightOf_Moulpali = '400'|'regular';
+type WeightOf_Mountains_of_Christmas = '400'|'700'|'regular'|'bold';
 type WeightOf_Mouse_Memoirs = '400'|'regular';
 type WeightOf_M_PLUS_1 = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_M_PLUS_1_Code = StringIntRange<10,70,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold';
@@ -1396,6 +1432,7 @@ type WeightOf_Oleo_Script = '400'|'700'|'regular'|'bold';
 type WeightOf_Oleo_Script_Swash_Caps = '400'|'700'|'regular'|'bold';
 type WeightOf_Oooh_Baby = '400'|'regular';
 type WeightOf_Open_Sans = StringIntRange<30,80,1>|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold';
+type WeightOf_Open_Sans_Condensed = '300'|'700'|'light'|'bold';
 type WeightOf_Oranienbaum = '400'|'regular';
 type WeightOf_Orbitron = StringIntRange<40,90,1>|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Oregano = '400'|'regular';
@@ -1435,6 +1472,7 @@ type WeightOf_Paytone_One = '400'|'regular';
 type WeightOf_Pecita = '400'|'regular';
 type WeightOf_Peddana = '400'|'regular';
 type WeightOf_Peralta = '400'|'regular';
+type WeightOf_Permanent_Marker = '400'|'regular';
 type WeightOf_Petemoss = '400'|'regular';
 type WeightOf_Petit_Formal_Script = '400'|'regular';
 type WeightOf_Petrona = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
@@ -1511,6 +1549,7 @@ type WeightOf_Rambla = '400'|'700'|'regular'|'bold';
 type WeightOf_Rammetto_One = '400'|'regular';
 type WeightOf_Rampart_One = '400'|'regular';
 type WeightOf_Ranchers = '400'|'regular';
+type WeightOf_Rancho = '400'|'regular';
 type WeightOf_Ranga = '400'|'700'|'regular'|'bold';
 type WeightOf_Rasa = StringIntRange<30,70,1>|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Rationale = '400'|'regular';
@@ -1522,6 +1561,7 @@ type WeightOf_Redacted_Script = '300'|'400'|'700'|'light'|'regular'|'bold';
 type WeightOf_Red_Hat_Display = StringIntRange<30,90,1>|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Red_Hat_Mono = StringIntRange<30,70,1>|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Red_Hat_Text = StringIntRange<30,70,1>|'light'|'regular'|'medium'|'semibold'|'bold';
+type WeightOf_Redressed = '400'|'regular';
 type WeightOf_Red_Rose = StringIntRange<30,70,1>|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Reem_Kufi = StringIntRange<40,70,1>|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Reem_Kufi_Fun = StringIntRange<40,70,1>|'regular'|'medium'|'semibold'|'bold';
@@ -1535,10 +1575,15 @@ type WeightOf_Ribeye_Marrow = '400'|'regular';
 type WeightOf_Righteous = '400'|'regular';
 type WeightOf_Risque = '400'|'regular';
 type WeightOf_Road_Rage = '400'|'regular';
+type WeightOf_Roboto = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Roboto_Flex = StringIntRange<10,100,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
+type WeightOf_Roboto_Mono = StringIntRange<10,70,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Roboto_Serif = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
+type WeightOf_Roboto_Slab = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
+type WeightOf_Rochester = '400'|'regular';
 type WeightOf_Rock_3D = '400'|'regular';
 type WeightOf_RocknRoll_One = '400'|'regular';
+type WeightOf_Rock_Salt = '400'|'regular';
 type WeightOf_Rokkitt = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Romanesco = '400'|'regular';
 type WeightOf_Ropa_Sans = '400'|'regular';
@@ -1593,9 +1638,11 @@ type WeightOf_Sarala = '400'|'700'|'regular'|'bold';
 type WeightOf_Sarina = '400'|'regular';
 type WeightOf_Sarpanch = '400'|'500'|'600'|'700'|'800'|'900'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Sassy_Frass = '400'|'regular';
+type WeightOf_Satisfy = '400'|'regular';
 type WeightOf_Sawarabi_Mincho = '400'|'regular';
 type WeightOf_Scada = '400'|'700'|'regular'|'bold';
 type WeightOf_Scheherazade_New = '400'|'700'|'regular'|'bold';
+type WeightOf_Schoolbell = '400'|'regular';
 type WeightOf_Scope_One = '400'|'regular';
 type WeightOf_Seaweed_Script = '400'|'regular';
 type WeightOf_Secular_One = '400'|'regular';
@@ -1638,7 +1685,9 @@ type WeightOf_Six_Caps = '400'|'regular';
 type WeightOf_Skranji = '400'|'700'|'regular'|'bold';
 type WeightOf_Slabo_13px = '400'|'regular';
 type WeightOf_Slabo_27px = '400'|'regular';
+type WeightOf_Slackey = '400'|'regular';
 type WeightOf_Slackside_One = '400'|'regular';
+type WeightOf_Smokum = '400'|'regular';
 type WeightOf_Smooch = '400'|'regular';
 type WeightOf_Smooch_Sans = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 type WeightOf_Smythe = '400'|'regular';
@@ -1662,6 +1711,7 @@ type WeightOf_Source_Serif_4 = StringIntRange<20,90,1>|'extralight'|'light'|'reg
 type WeightOf_Source_Serif_Pro = '200'|'300'|'400'|'600'|'700'|'900'|'extralight'|'light'|'regular'|'semibold'|'bold'|'black';
 type WeightOf_Space_Grotesk = StringIntRange<30,70,1>|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Space_Mono = '400'|'700'|'regular'|'bold';
+type WeightOf_Special_Elite = '400'|'regular';
 type WeightOf_Spectral = '200'|'300'|'400'|'500'|'600'|'700'|'800'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold';
 type WeightOf_Spectral_SC = '200'|'300'|'400'|'500'|'600'|'700'|'800'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold';
 type WeightOf_Spicy_Rice = '400'|'regular';
@@ -1695,12 +1745,14 @@ type WeightOf_Suez_One = '400'|'regular';
 type WeightOf_Sulphur_Point = '300'|'400'|'700'|'light'|'regular'|'bold';
 type WeightOf_Sumana = '400'|'700'|'regular'|'bold';
 type WeightOf_Sunflower = '300'|'500'|'700'|'light'|'medium'|'bold';
+type WeightOf_Sunshiney = '400'|'regular';
 type WeightOf_Supermercado_One = '400'|'regular';
 type WeightOf_Sura = '400'|'700'|'regular'|'bold';
 type WeightOf_Suranna = '400'|'regular';
 type WeightOf_Suravaram = '400'|'regular';
 type WeightOf_Suwannaphum = '100'|'300'|'400'|'700'|'900'|'thin'|'light'|'regular'|'bold'|'black';
 type WeightOf_Swanky_and_Moo_Moo = '400'|'regular';
+type WeightOf_Syncopate = '400'|'700'|'regular'|'bold';
 type WeightOf_Syne = StringIntRange<40,80,1>|'regular'|'medium'|'semibold'|'bold'|'extrabold';
 type WeightOf_Syne_Mono = '400'|'regular';
 type WeightOf_Syne_Tactile = '400'|'regular';
@@ -1724,6 +1776,7 @@ type WeightOf_The_Nautigal = '400'|'700'|'regular'|'bold';
 type WeightOf_Tienne = '400'|'700'|'900'|'regular'|'bold'|'black';
 type WeightOf_Tillana = '400'|'500'|'600'|'700'|'800'|'regular'|'medium'|'semibold'|'bold'|'extrabold';
 type WeightOf_Timmana = '400'|'regular';
+type WeightOf_Tinos = '400'|'700'|'regular'|'bold';
 type WeightOf_Tiro_Bangla = '400'|'regular';
 type WeightOf_Tiro_Devanagari_Hindi = '400'|'regular';
 type WeightOf_Tiro_Devanagari_Marathi = '400'|'regular';
@@ -1749,12 +1802,17 @@ type WeightOf_Tuffy = '400'|'700'|'regular'|'bold';
 type WeightOf_Tulpen_One = '400'|'regular';
 type WeightOf_Turret_Road = '200'|'300'|'400'|'500'|'700'|'800'|'extralight'|'light'|'regular'|'medium'|'bold'|'extrabold';
 type WeightOf_Twinkle_Star = '400'|'regular';
+type WeightOf_Ubuntu = '300'|'400'|'500'|'700'|'light'|'regular'|'medium'|'bold';
+type WeightOf_Ubuntu_Condensed = '400'|'regular';
+type WeightOf_Ubuntu_Mono = '400'|'700'|'regular'|'bold';
 type WeightOf_Uchen = '400'|'regular';
+type WeightOf_Ultra = '400'|'regular';
 type WeightOf_Uncial_Antiqua = '400'|'regular';
 type WeightOf_Underdog = '400'|'regular';
 type WeightOf_Unica_One = '400'|'regular';
 type WeightOf_UnifrakturCook = '700'|'bold';
 type WeightOf_UnifrakturMaguntia = '400'|'regular';
+type WeightOf_Unkempt = '400'|'700'|'regular'|'bold';
 type WeightOf_Unlock = '400'|'regular';
 type WeightOf_Unna = '400'|'700'|'regular'|'bold';
 type WeightOf_Updock = '400'|'regular';
@@ -1780,6 +1838,7 @@ type WeightOf_VT323 = '400'|'regular';
 type WeightOf_Vujahday_Script = '400'|'regular';
 type WeightOf_Waiting_for_the_Sunrise = '400'|'regular';
 type WeightOf_Wallpoet = '400'|'regular';
+type WeightOf_Walter_Turncoat = '400'|'regular';
 type WeightOf_Warnes = '400'|'regular';
 type WeightOf_Water_Brush = '400'|'regular';
 type WeightOf_Waterfall = '400'|'regular';
@@ -1795,6 +1854,7 @@ type WeightOf_Yaldevi_Colombo = '200'|'300'|'400'|'500'|'600'|'700'|'extralight'
 type WeightOf_Yanone_Kaffeesatz = StringIntRange<20,70,1>|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Yantramanav = '100'|'300'|'400'|'500'|'700'|'900'|'thin'|'light'|'regular'|'medium'|'bold'|'black';
 type WeightOf_Yatra_One = '400'|'regular';
+type WeightOf_Yellowtail = '400'|'regular';
 type WeightOf_Yeon_Sung = '400'|'regular';
 type WeightOf_Yeseva_One = '400'|'regular';
 type WeightOf_Yesteryear = '400'|'regular';
@@ -1824,12 +1884,6 @@ type WeightOf_Zeyada = '400'|'regular';
 type WeightOf_Zhi_Mang_Xing = '400'|'regular';
 type WeightOf_Zilla_Slab = '300'|'400'|'500'|'600'|'700'|'light'|'regular'|'medium'|'semibold'|'bold';
 type WeightOf_Zilla_Slab_Highlight = '400'|'700'|'regular'|'bold';
-type WeightOf_Ubuntu = '300'|'400'|'500'|'700'|'light'|'regular'|'medium'|'bold';
-type WeightOf_Ubuntu_Condensed = '400'|'regular';
-type WeightOf_Ubuntu_Mono = '400'|'700'|'regular'|'bold';
-type WeightOf_Roboto = '100'|'300'|'400'|'500'|'700'|'900'|'thin'|'light'|'regular'|'medium'|'bold'|'black';
-type WeightOf_Roboto_Mono = StringIntRange<10,70,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold';
-type WeightOf_Roboto_Slab = StringIntRange<10,90,1>|'thin'|'extralight'|'light'|'regular'|'medium'|'semibold'|'bold'|'extrabold'|'black';
 
 type VariationOf_ABeeZee = 'normal'|'italic';
 type VariationOf_Abel = 'normal';
@@ -1837,6 +1891,7 @@ type VariationOf_Abhaya_Libre = 'normal';
 type VariationOf_Aboreto = 'normal';
 type VariationOf_Abril_Fatface = 'normal';
 type VariationOf_Abyssinica_SIL = 'normal';
+type VariationOf_Aclonica = 'normal';
 type VariationOf_Acme = 'normal';
 type VariationOf_Actor = 'normal';
 type VariationOf_Adamina = 'normal';
@@ -1921,6 +1976,7 @@ type VariationOf_Aref_Ruqaa_Ink = 'normal';
 type VariationOf_Are_You_Serious = 'normal';
 type VariationOf_Arima = 'normal';
 type VariationOf_Arima_Madurai = 'normal';
+type VariationOf_Arimo = 'normal'|'italic';
 type VariationOf_Arizonia = 'normal';
 type VariationOf_Armata = 'normal';
 type VariationOf_Arsenal = 'normal'|'italic';
@@ -2059,6 +2115,7 @@ type VariationOf_Cairo = 'normal'|Font_slnt_t<[11],11>;
 type VariationOf_Cairo_Play = 'normal'|Font_slnt_t<[11],11>;
 type VariationOf_Caladea = 'normal'|'italic';
 type VariationOf_Calistoga = 'normal';
+type VariationOf_Calligraffitti = 'normal';
 type VariationOf_Cambay = 'normal'|'italic';
 type VariationOf_Cambo = 'normal';
 type VariationOf_Candal = 'normal';
@@ -2094,7 +2151,9 @@ type VariationOf_Chelsea_Market = 'normal';
 type VariationOf_Chenla = 'normal';
 type VariationOf_Cherish = 'normal';
 type VariationOf_Cherry_Bomb_One = 'normal';
+type VariationOf_Cherry_Cream_Soda = 'normal';
 type VariationOf_Cherry_Swash = 'normal';
+type VariationOf_Chewy = 'normal';
 type VariationOf_Chicle = 'normal';
 type VariationOf_Chilanka = 'normal';
 type VariationOf_Chivo = 'normal'|'italic';
@@ -2113,6 +2172,7 @@ type VariationOf_Comfortaa = 'normal';
 type VariationOf_Comforter = 'normal';
 type VariationOf_Comforter_Brush = 'normal';
 type VariationOf_Comic_Neue = 'normal'|'italic';
+type VariationOf_Coming_Soon = 'normal';
 type VariationOf_Commissioner = 'normal'|Font_slnt_t<[12],0>;
 type VariationOf_Concert_One = 'normal';
 type VariationOf_Condiment = 'normal';
@@ -2131,13 +2191,17 @@ type VariationOf_Cormorant_Unicase = 'normal';
 type VariationOf_Cormorant_Upright = 'normal';
 type VariationOf_Courgette = 'normal';
 type VariationOf_Courier_Prime = 'normal'|'italic';
+type VariationOf_Cousine = 'normal'|'italic';
 type VariationOf_Coustard = 'normal';
 type VariationOf_Covered_By_Your_Grace = 'normal';
+type VariationOf_Crafty_Girls = 'normal';
 type VariationOf_Creepster = 'normal';
+type VariationOf_Creepster_Caps = 'normal';
 type VariationOf_Crete_Round = 'normal'|'italic';
 type VariationOf_Crimson_Pro = 'normal'|'italic';
 type VariationOf_Crimson_Text = 'normal'|'italic';
 type VariationOf_Croissant_One = 'normal';
+type VariationOf_Crushed = 'normal';
 type VariationOf_Cuprum = 'normal'|'italic';
 type VariationOf_Cute_Font = 'normal';
 type VariationOf_Cutive = 'normal';
@@ -2253,6 +2317,7 @@ type VariationOf_Flow_Circular = 'normal';
 type VariationOf_Flow_Rounded = 'normal';
 type VariationOf_Foldit = 'normal';
 type VariationOf_Fondamento = 'normal'|'italic';
+type VariationOf_Fontdiner_Swanky = 'normal';
 type VariationOf_Forum = 'normal';
 type VariationOf_Fragment_Mono = 'normal'|'italic';
 type VariationOf_Francois_One = 'normal';
@@ -2358,6 +2423,7 @@ type VariationOf_Hind_Mysuru = 'normal';
 type VariationOf_Hind_Siliguri = 'normal';
 type VariationOf_Hind_Vadodara = 'normal';
 type VariationOf_Holtwood_One_SC = 'normal';
+type VariationOf_Homemade_Apple = 'normal';
 type VariationOf_Homenaje = 'normal';
 type VariationOf_Hubballi = 'normal';
 type VariationOf_Hurricane = 'normal';
@@ -2399,6 +2465,7 @@ type VariationOf_Inria_Serif = 'normal'|'italic';
 type VariationOf_Inspiration = 'normal';
 type VariationOf_Inter = 'normal'|Font_slnt_t<[10],0>;
 type VariationOf_Inter_Tight = 'normal'|'italic';
+type VariationOf_Irish_Grover = 'normal';
 type VariationOf_Island_Moments = 'normal';
 type VariationOf_Istok_Web = 'normal'|'italic';
 type VariationOf_Italiana = 'normal';
@@ -2418,12 +2485,19 @@ type VariationOf_Josefin_Sans = 'normal'|'italic';
 type VariationOf_Josefin_Slab = 'normal'|'italic';
 type VariationOf_Jost = 'normal'|'italic';
 type VariationOf_Joti_One = 'normal';
+type VariationOf_jsMath_cmbx10 = 'normal';
+type VariationOf_jsMath_cmex10 = 'normal';
+type VariationOf_jsMath_cmmi10 = 'normal';
+type VariationOf_jsMath_cmr10 = 'normal';
+type VariationOf_jsMath_cmsy10 = 'normal';
+type VariationOf_jsMath_cmti10 = 'normal';
 type VariationOf_Jua = 'normal';
 type VariationOf_Judson = 'normal'|'italic';
 type VariationOf_Julee = 'normal';
 type VariationOf_Julius_Sans_One = 'normal';
 type VariationOf_Junge = 'normal';
 type VariationOf_Jura = 'normal';
+type VariationOf_Just_Another_Hand = 'normal';
 type VariationOf_Just_Me_Again_Down_Here = 'normal';
 type VariationOf_K2D = 'normal'|'italic';
 type VariationOf_Kadwa = 'normal';
@@ -2463,8 +2537,11 @@ type VariationOf_Kodchasan = 'normal'|'italic';
 type VariationOf_KoHo = 'normal'|'italic';
 type VariationOf_Koh_Santepheap = 'normal';
 type VariationOf_Kolker_Brush = 'normal';
+type VariationOf_Kosugi = 'normal';
+type VariationOf_Kosugi_Maru = 'normal';
 type VariationOf_Kotta_One = 'normal';
 type VariationOf_Koulen = 'normal';
+type VariationOf_Kranky = 'normal';
 type VariationOf_Kreon = 'normal';
 type VariationOf_Kristi = 'normal';
 type VariationOf_Krona_One = 'normal';
@@ -2535,6 +2612,7 @@ type VariationOf_Loved_by_the_King = 'normal';
 type VariationOf_Love_Light = 'normal';
 type VariationOf_Lovers_Quarrel = 'normal';
 type VariationOf_Love_Ya_Like_A_Sister = 'normal';
+type VariationOf_Luckiest_Guy = 'normal';
 type VariationOf_Lusitana = 'normal';
 type VariationOf_Lustria = 'normal';
 type VariationOf_Luxurious_Roman = 'normal';
@@ -2543,6 +2621,7 @@ type VariationOf_Macondo = 'normal';
 type VariationOf_Macondo_Swash_Caps = 'normal';
 type VariationOf_Mada = 'normal';
 type VariationOf_Magra = 'normal';
+type VariationOf_Maiden_Orange = 'normal';
 type VariationOf_Maitree = 'normal';
 type VariationOf_Major_Mono_Display = 'normal';
 type VariationOf_Mako = 'normal';
@@ -2615,6 +2694,7 @@ type VariationOf_Monsieur_La_Doulaise = 'normal';
 type VariationOf_Montaga = 'normal';
 type VariationOf_Montagu_Slab = 'normal'|Font_opsz_t<16,144>;
 type VariationOf_MonteCarlo = 'normal';
+type VariationOf_Montez = 'normal';
 type VariationOf_Montserrat = 'normal'|'italic';
 type VariationOf_Montserrat_Alternates = 'normal'|'italic';
 type VariationOf_Montserrat_Subrayada = 'normal';
@@ -2622,6 +2702,7 @@ type VariationOf_Moo_Lah_Lah = 'normal';
 type VariationOf_Moon_Dance = 'normal';
 type VariationOf_Moul = 'normal';
 type VariationOf_Moulpali = 'normal';
+type VariationOf_Mountains_of_Christmas = 'normal';
 type VariationOf_Mouse_Memoirs = 'normal';
 type VariationOf_M_PLUS_1 = 'normal';
 type VariationOf_M_PLUS_1_Code = 'normal';
@@ -2901,6 +2982,7 @@ type VariationOf_Oleo_Script = 'normal';
 type VariationOf_Oleo_Script_Swash_Caps = 'normal';
 type VariationOf_Oooh_Baby = 'normal';
 type VariationOf_Open_Sans = 'normal'|'italic'|Font_wdth_t<75,100>;
+type VariationOf_Open_Sans_Condensed = 'normal'|'italic';
 type VariationOf_Oranienbaum = 'normal';
 type VariationOf_Orbitron = 'normal';
 type VariationOf_Oregano = 'normal'|'italic';
@@ -2940,6 +3022,7 @@ type VariationOf_Paytone_One = 'normal';
 type VariationOf_Pecita = 'normal';
 type VariationOf_Peddana = 'normal';
 type VariationOf_Peralta = 'normal';
+type VariationOf_Permanent_Marker = 'normal';
 type VariationOf_Petemoss = 'normal';
 type VariationOf_Petit_Formal_Script = 'normal';
 type VariationOf_Petrona = 'normal'|'italic';
@@ -3016,6 +3099,7 @@ type VariationOf_Rambla = 'normal'|'italic';
 type VariationOf_Rammetto_One = 'normal';
 type VariationOf_Rampart_One = 'normal';
 type VariationOf_Ranchers = 'normal';
+type VariationOf_Rancho = 'normal';
 type VariationOf_Ranga = 'normal';
 type VariationOf_Rasa = 'normal'|'italic';
 type VariationOf_Rationale = 'normal';
@@ -3027,6 +3111,7 @@ type VariationOf_Redacted_Script = 'normal';
 type VariationOf_Red_Hat_Display = 'normal'|'italic';
 type VariationOf_Red_Hat_Mono = 'normal'|'italic';
 type VariationOf_Red_Hat_Text = 'normal'|'italic';
+type VariationOf_Redressed = 'normal';
 type VariationOf_Red_Rose = 'normal';
 type VariationOf_Reem_Kufi = 'normal';
 type VariationOf_Reem_Kufi_Fun = 'normal';
@@ -3040,10 +3125,15 @@ type VariationOf_Ribeye_Marrow = 'normal';
 type VariationOf_Righteous = 'normal';
 type VariationOf_Risque = 'normal';
 type VariationOf_Road_Rage = 'normal';
+type VariationOf_Roboto = 'normal'|'italic'|Font_wdth_t<75,100>;
 type VariationOf_Roboto_Flex = 'normal'|Font_GRAD_t<[200],150>|Font_XOPQ_t<27,175>|Font_XTRA_t<323,603>|Font_YOPQ_t<25,135>|Font_YTAS_t<649,854>|Font_YTDE_t<[305],[98]>|Font_YTFI_t<560,788>|Font_YTLC_t<416,570>|Font_YTUC_t<528,760>|Font_opsz_t<8,144>|Font_slnt_t<[10],0>|Font_wdth_t<25,151>;
+type VariationOf_Roboto_Mono = 'normal'|'italic';
 type VariationOf_Roboto_Serif = 'normal'|'italic'|Font_GRAD_t<[50],100>|Font_opsz_t<8,144>|Font_wdth_t<50,150>;
+type VariationOf_Roboto_Slab = 'normal';
+type VariationOf_Rochester = 'normal';
 type VariationOf_Rock_3D = 'normal';
 type VariationOf_RocknRoll_One = 'normal';
+type VariationOf_Rock_Salt = 'normal';
 type VariationOf_Rokkitt = 'normal';
 type VariationOf_Romanesco = 'normal';
 type VariationOf_Ropa_Sans = 'normal'|'italic';
@@ -3098,9 +3188,11 @@ type VariationOf_Sarala = 'normal';
 type VariationOf_Sarina = 'normal';
 type VariationOf_Sarpanch = 'normal';
 type VariationOf_Sassy_Frass = 'normal';
+type VariationOf_Satisfy = 'normal';
 type VariationOf_Sawarabi_Mincho = 'normal';
 type VariationOf_Scada = 'normal'|'italic';
 type VariationOf_Scheherazade_New = 'normal';
+type VariationOf_Schoolbell = 'normal';
 type VariationOf_Scope_One = 'normal';
 type VariationOf_Seaweed_Script = 'normal';
 type VariationOf_Secular_One = 'normal';
@@ -3143,7 +3235,9 @@ type VariationOf_Six_Caps = 'normal';
 type VariationOf_Skranji = 'normal';
 type VariationOf_Slabo_13px = 'normal';
 type VariationOf_Slabo_27px = 'normal';
+type VariationOf_Slackey = 'normal';
 type VariationOf_Slackside_One = 'normal';
+type VariationOf_Smokum = 'normal';
 type VariationOf_Smooch = 'normal';
 type VariationOf_Smooch_Sans = 'normal';
 type VariationOf_Smythe = 'normal';
@@ -3167,6 +3261,7 @@ type VariationOf_Source_Serif_4 = 'normal'|'italic'|Font_opsz_t<8,60>;
 type VariationOf_Source_Serif_Pro = 'normal'|'italic';
 type VariationOf_Space_Grotesk = 'normal';
 type VariationOf_Space_Mono = 'normal'|'italic';
+type VariationOf_Special_Elite = 'normal';
 type VariationOf_Spectral = 'normal'|'italic';
 type VariationOf_Spectral_SC = 'normal'|'italic';
 type VariationOf_Spicy_Rice = 'normal';
@@ -3200,12 +3295,14 @@ type VariationOf_Suez_One = 'normal';
 type VariationOf_Sulphur_Point = 'normal';
 type VariationOf_Sumana = 'normal';
 type VariationOf_Sunflower = 'normal';
+type VariationOf_Sunshiney = 'normal';
 type VariationOf_Supermercado_One = 'normal';
 type VariationOf_Sura = 'normal';
 type VariationOf_Suranna = 'normal';
 type VariationOf_Suravaram = 'normal';
 type VariationOf_Suwannaphum = 'normal';
 type VariationOf_Swanky_and_Moo_Moo = 'normal';
+type VariationOf_Syncopate = 'normal';
 type VariationOf_Syne = 'normal';
 type VariationOf_Syne_Mono = 'normal';
 type VariationOf_Syne_Tactile = 'normal';
@@ -3229,6 +3326,7 @@ type VariationOf_The_Nautigal = 'normal';
 type VariationOf_Tienne = 'normal';
 type VariationOf_Tillana = 'normal';
 type VariationOf_Timmana = 'normal';
+type VariationOf_Tinos = 'normal'|'italic';
 type VariationOf_Tiro_Bangla = 'normal'|'italic';
 type VariationOf_Tiro_Devanagari_Hindi = 'normal'|'italic';
 type VariationOf_Tiro_Devanagari_Marathi = 'normal'|'italic';
@@ -3254,12 +3352,17 @@ type VariationOf_Tuffy = 'normal'|'italic';
 type VariationOf_Tulpen_One = 'normal';
 type VariationOf_Turret_Road = 'normal';
 type VariationOf_Twinkle_Star = 'normal';
+type VariationOf_Ubuntu = 'normal'|'italic';
+type VariationOf_Ubuntu_Condensed = 'normal';
+type VariationOf_Ubuntu_Mono = 'normal'|'italic';
 type VariationOf_Uchen = 'normal';
+type VariationOf_Ultra = 'normal';
 type VariationOf_Uncial_Antiqua = 'normal';
 type VariationOf_Underdog = 'normal';
 type VariationOf_Unica_One = 'normal';
 type VariationOf_UnifrakturCook = 'normal';
 type VariationOf_UnifrakturMaguntia = 'normal';
+type VariationOf_Unkempt = 'normal';
 type VariationOf_Unlock = 'normal';
 type VariationOf_Unna = 'normal'|'italic';
 type VariationOf_Updock = 'normal';
@@ -3285,6 +3388,7 @@ type VariationOf_VT323 = 'normal';
 type VariationOf_Vujahday_Script = 'normal';
 type VariationOf_Waiting_for_the_Sunrise = 'normal';
 type VariationOf_Wallpoet = 'normal';
+type VariationOf_Walter_Turncoat = 'normal';
 type VariationOf_Warnes = 'normal';
 type VariationOf_Water_Brush = 'normal';
 type VariationOf_Waterfall = 'normal';
@@ -3300,6 +3404,7 @@ type VariationOf_Yaldevi_Colombo = 'normal';
 type VariationOf_Yanone_Kaffeesatz = 'normal';
 type VariationOf_Yantramanav = 'normal';
 type VariationOf_Yatra_One = 'normal';
+type VariationOf_Yellowtail = 'normal';
 type VariationOf_Yeon_Sung = 'normal';
 type VariationOf_Yeseva_One = 'normal';
 type VariationOf_Yesteryear = 'normal';
@@ -3329,12 +3434,6 @@ type VariationOf_Zeyada = 'normal';
 type VariationOf_Zhi_Mang_Xing = 'normal';
 type VariationOf_Zilla_Slab = 'normal'|'italic';
 type VariationOf_Zilla_Slab_Highlight = 'normal';
-type VariationOf_Ubuntu = 'normal'|'italic';
-type VariationOf_Ubuntu_Condensed = 'normal';
-type VariationOf_Ubuntu_Mono = 'normal'|'italic';
-type VariationOf_Roboto = 'normal'|'italic';
-type VariationOf_Roboto_Mono = 'normal'|'italic';
-type VariationOf_Roboto_Slab = 'normal';
 
 export type IMapForWeights = {
   'ABeeZee': WeightOf_ABeeZee;
@@ -3343,6 +3442,7 @@ export type IMapForWeights = {
   'Aboreto': WeightOf_Aboreto;
   'Abril Fatface': WeightOf_Abril_Fatface;
   'Abyssinica SIL': WeightOf_Abyssinica_SIL;
+  'Aclonica': WeightOf_Aclonica;
   'Acme': WeightOf_Acme;
   'Actor': WeightOf_Actor;
   'Adamina': WeightOf_Adamina;
@@ -3427,6 +3527,7 @@ export type IMapForWeights = {
   'Are You Serious': WeightOf_Are_You_Serious;
   'Arima': WeightOf_Arima;
   'Arima Madurai': WeightOf_Arima_Madurai;
+  'Arimo': WeightOf_Arimo;
   'Arizonia': WeightOf_Arizonia;
   'Armata': WeightOf_Armata;
   'Arsenal': WeightOf_Arsenal;
@@ -3565,6 +3666,7 @@ export type IMapForWeights = {
   'Cairo Play': WeightOf_Cairo_Play;
   'Caladea': WeightOf_Caladea;
   'Calistoga': WeightOf_Calistoga;
+  'Calligraffitti': WeightOf_Calligraffitti;
   'Cambay': WeightOf_Cambay;
   'Cambo': WeightOf_Cambo;
   'Candal': WeightOf_Candal;
@@ -3600,7 +3702,9 @@ export type IMapForWeights = {
   'Chenla': WeightOf_Chenla;
   'Cherish': WeightOf_Cherish;
   'Cherry Bomb One': WeightOf_Cherry_Bomb_One;
+  'Cherry Cream Soda': WeightOf_Cherry_Cream_Soda;
   'Cherry Swash': WeightOf_Cherry_Swash;
+  'Chewy': WeightOf_Chewy;
   'Chicle': WeightOf_Chicle;
   'Chilanka': WeightOf_Chilanka;
   'Chivo': WeightOf_Chivo;
@@ -3619,6 +3723,7 @@ export type IMapForWeights = {
   'Comforter': WeightOf_Comforter;
   'Comforter Brush': WeightOf_Comforter_Brush;
   'Comic Neue': WeightOf_Comic_Neue;
+  'Coming Soon': WeightOf_Coming_Soon;
   'Commissioner': WeightOf_Commissioner;
   'Concert One': WeightOf_Concert_One;
   'Condiment': WeightOf_Condiment;
@@ -3637,13 +3742,17 @@ export type IMapForWeights = {
   'Cormorant Upright': WeightOf_Cormorant_Upright;
   'Courgette': WeightOf_Courgette;
   'Courier Prime': WeightOf_Courier_Prime;
+  'Cousine': WeightOf_Cousine;
   'Coustard': WeightOf_Coustard;
   'Covered By Your Grace': WeightOf_Covered_By_Your_Grace;
+  'Crafty Girls': WeightOf_Crafty_Girls;
   'Creepster': WeightOf_Creepster;
+  'Creepster Caps': WeightOf_Creepster_Caps;
   'Crete Round': WeightOf_Crete_Round;
   'Crimson Pro': WeightOf_Crimson_Pro;
   'Crimson Text': WeightOf_Crimson_Text;
   'Croissant One': WeightOf_Croissant_One;
+  'Crushed': WeightOf_Crushed;
   'Cuprum': WeightOf_Cuprum;
   'Cute Font': WeightOf_Cute_Font;
   'Cutive': WeightOf_Cutive;
@@ -3759,6 +3868,7 @@ export type IMapForWeights = {
   'Flow Rounded': WeightOf_Flow_Rounded;
   'Foldit': WeightOf_Foldit;
   'Fondamento': WeightOf_Fondamento;
+  'Fontdiner Swanky': WeightOf_Fontdiner_Swanky;
   'Forum': WeightOf_Forum;
   'Fragment Mono': WeightOf_Fragment_Mono;
   'Francois One': WeightOf_Francois_One;
@@ -3864,6 +3974,7 @@ export type IMapForWeights = {
   'Hind Siliguri': WeightOf_Hind_Siliguri;
   'Hind Vadodara': WeightOf_Hind_Vadodara;
   'Holtwood One SC': WeightOf_Holtwood_One_SC;
+  'Homemade Apple': WeightOf_Homemade_Apple;
   'Homenaje': WeightOf_Homenaje;
   'Hubballi': WeightOf_Hubballi;
   'Hurricane': WeightOf_Hurricane;
@@ -3905,6 +4016,7 @@ export type IMapForWeights = {
   'Inspiration': WeightOf_Inspiration;
   'Inter': WeightOf_Inter;
   'Inter Tight': WeightOf_Inter_Tight;
+  'Irish Grover': WeightOf_Irish_Grover;
   'Island Moments': WeightOf_Island_Moments;
   'Istok Web': WeightOf_Istok_Web;
   'Italiana': WeightOf_Italiana;
@@ -3924,12 +4036,19 @@ export type IMapForWeights = {
   'Josefin Slab': WeightOf_Josefin_Slab;
   'Jost': WeightOf_Jost;
   'Joti One': WeightOf_Joti_One;
+  'jsMath cmbx10': WeightOf_jsMath_cmbx10;
+  'jsMath cmex10': WeightOf_jsMath_cmex10;
+  'jsMath cmmi10': WeightOf_jsMath_cmmi10;
+  'jsMath cmr10': WeightOf_jsMath_cmr10;
+  'jsMath cmsy10': WeightOf_jsMath_cmsy10;
+  'jsMath cmti10': WeightOf_jsMath_cmti10;
   'Jua': WeightOf_Jua;
   'Judson': WeightOf_Judson;
   'Julee': WeightOf_Julee;
   'Julius Sans One': WeightOf_Julius_Sans_One;
   'Junge': WeightOf_Junge;
   'Jura': WeightOf_Jura;
+  'Just Another Hand': WeightOf_Just_Another_Hand;
   'Just Me Again Down Here': WeightOf_Just_Me_Again_Down_Here;
   'K2D': WeightOf_K2D;
   'Kadwa': WeightOf_Kadwa;
@@ -3969,8 +4088,11 @@ export type IMapForWeights = {
   'KoHo': WeightOf_KoHo;
   'Koh Santepheap': WeightOf_Koh_Santepheap;
   'Kolker Brush': WeightOf_Kolker_Brush;
+  'Kosugi': WeightOf_Kosugi;
+  'Kosugi Maru': WeightOf_Kosugi_Maru;
   'Kotta One': WeightOf_Kotta_One;
   'Koulen': WeightOf_Koulen;
+  'Kranky': WeightOf_Kranky;
   'Kreon': WeightOf_Kreon;
   'Kristi': WeightOf_Kristi;
   'Krona One': WeightOf_Krona_One;
@@ -4041,6 +4163,7 @@ export type IMapForWeights = {
   'Love Light': WeightOf_Love_Light;
   'Lovers Quarrel': WeightOf_Lovers_Quarrel;
   'Love Ya Like A Sister': WeightOf_Love_Ya_Like_A_Sister;
+  'Luckiest Guy': WeightOf_Luckiest_Guy;
   'Lusitana': WeightOf_Lusitana;
   'Lustria': WeightOf_Lustria;
   'Luxurious Roman': WeightOf_Luxurious_Roman;
@@ -4049,6 +4172,7 @@ export type IMapForWeights = {
   'Macondo Swash Caps': WeightOf_Macondo_Swash_Caps;
   'Mada': WeightOf_Mada;
   'Magra': WeightOf_Magra;
+  'Maiden Orange': WeightOf_Maiden_Orange;
   'Maitree': WeightOf_Maitree;
   'Major Mono Display': WeightOf_Major_Mono_Display;
   'Mako': WeightOf_Mako;
@@ -4121,6 +4245,7 @@ export type IMapForWeights = {
   'Montaga': WeightOf_Montaga;
   'Montagu Slab': WeightOf_Montagu_Slab;
   'MonteCarlo': WeightOf_MonteCarlo;
+  'Montez': WeightOf_Montez;
   'Montserrat': WeightOf_Montserrat;
   'Montserrat Alternates': WeightOf_Montserrat_Alternates;
   'Montserrat Subrayada': WeightOf_Montserrat_Subrayada;
@@ -4128,6 +4253,7 @@ export type IMapForWeights = {
   'Moon Dance': WeightOf_Moon_Dance;
   'Moul': WeightOf_Moul;
   'Moulpali': WeightOf_Moulpali;
+  'Mountains of Christmas': WeightOf_Mountains_of_Christmas;
   'Mouse Memoirs': WeightOf_Mouse_Memoirs;
   'M PLUS 1': WeightOf_M_PLUS_1;
   'M PLUS 1 Code': WeightOf_M_PLUS_1_Code;
@@ -4407,6 +4533,7 @@ export type IMapForWeights = {
   'Oleo Script Swash Caps': WeightOf_Oleo_Script_Swash_Caps;
   'Oooh Baby': WeightOf_Oooh_Baby;
   'Open Sans': WeightOf_Open_Sans;
+  'Open Sans Condensed': WeightOf_Open_Sans_Condensed;
   'Oranienbaum': WeightOf_Oranienbaum;
   'Orbitron': WeightOf_Orbitron;
   'Oregano': WeightOf_Oregano;
@@ -4446,6 +4573,7 @@ export type IMapForWeights = {
   'Pecita': WeightOf_Pecita;
   'Peddana': WeightOf_Peddana;
   'Peralta': WeightOf_Peralta;
+  'Permanent Marker': WeightOf_Permanent_Marker;
   'Petemoss': WeightOf_Petemoss;
   'Petit Formal Script': WeightOf_Petit_Formal_Script;
   'Petrona': WeightOf_Petrona;
@@ -4522,6 +4650,7 @@ export type IMapForWeights = {
   'Rammetto One': WeightOf_Rammetto_One;
   'Rampart One': WeightOf_Rampart_One;
   'Ranchers': WeightOf_Ranchers;
+  'Rancho': WeightOf_Rancho;
   'Ranga': WeightOf_Ranga;
   'Rasa': WeightOf_Rasa;
   'Rationale': WeightOf_Rationale;
@@ -4533,6 +4662,7 @@ export type IMapForWeights = {
   'Red Hat Display': WeightOf_Red_Hat_Display;
   'Red Hat Mono': WeightOf_Red_Hat_Mono;
   'Red Hat Text': WeightOf_Red_Hat_Text;
+  'Redressed': WeightOf_Redressed;
   'Red Rose': WeightOf_Red_Rose;
   'Reem Kufi': WeightOf_Reem_Kufi;
   'Reem Kufi Fun': WeightOf_Reem_Kufi_Fun;
@@ -4546,10 +4676,15 @@ export type IMapForWeights = {
   'Righteous': WeightOf_Righteous;
   'Risque': WeightOf_Risque;
   'Road Rage': WeightOf_Road_Rage;
+  'Roboto': WeightOf_Roboto;
   'Roboto Flex': WeightOf_Roboto_Flex;
+  'Roboto Mono': WeightOf_Roboto_Mono;
   'Roboto Serif': WeightOf_Roboto_Serif;
+  'Roboto Slab': WeightOf_Roboto_Slab;
+  'Rochester': WeightOf_Rochester;
   'Rock 3D': WeightOf_Rock_3D;
   'RocknRoll One': WeightOf_RocknRoll_One;
+  'Rock Salt': WeightOf_Rock_Salt;
   'Rokkitt': WeightOf_Rokkitt;
   'Romanesco': WeightOf_Romanesco;
   'Ropa Sans': WeightOf_Ropa_Sans;
@@ -4604,9 +4739,11 @@ export type IMapForWeights = {
   'Sarina': WeightOf_Sarina;
   'Sarpanch': WeightOf_Sarpanch;
   'Sassy Frass': WeightOf_Sassy_Frass;
+  'Satisfy': WeightOf_Satisfy;
   'Sawarabi Mincho': WeightOf_Sawarabi_Mincho;
   'Scada': WeightOf_Scada;
   'Scheherazade New': WeightOf_Scheherazade_New;
+  'Schoolbell': WeightOf_Schoolbell;
   'Scope One': WeightOf_Scope_One;
   'Seaweed Script': WeightOf_Seaweed_Script;
   'Secular One': WeightOf_Secular_One;
@@ -4649,7 +4786,9 @@ export type IMapForWeights = {
   'Skranji': WeightOf_Skranji;
   'Slabo 13px': WeightOf_Slabo_13px;
   'Slabo 27px': WeightOf_Slabo_27px;
+  'Slackey': WeightOf_Slackey;
   'Slackside One': WeightOf_Slackside_One;
+  'Smokum': WeightOf_Smokum;
   'Smooch': WeightOf_Smooch;
   'Smooch Sans': WeightOf_Smooch_Sans;
   'Smythe': WeightOf_Smythe;
@@ -4673,6 +4812,7 @@ export type IMapForWeights = {
   'Source Serif Pro': WeightOf_Source_Serif_Pro;
   'Space Grotesk': WeightOf_Space_Grotesk;
   'Space Mono': WeightOf_Space_Mono;
+  'Special Elite': WeightOf_Special_Elite;
   'Spectral': WeightOf_Spectral;
   'Spectral SC': WeightOf_Spectral_SC;
   'Spicy Rice': WeightOf_Spicy_Rice;
@@ -4706,12 +4846,14 @@ export type IMapForWeights = {
   'Sulphur Point': WeightOf_Sulphur_Point;
   'Sumana': WeightOf_Sumana;
   'Sunflower': WeightOf_Sunflower;
+  'Sunshiney': WeightOf_Sunshiney;
   'Supermercado One': WeightOf_Supermercado_One;
   'Sura': WeightOf_Sura;
   'Suranna': WeightOf_Suranna;
   'Suravaram': WeightOf_Suravaram;
   'Suwannaphum': WeightOf_Suwannaphum;
   'Swanky and Moo Moo': WeightOf_Swanky_and_Moo_Moo;
+  'Syncopate': WeightOf_Syncopate;
   'Syne': WeightOf_Syne;
   'Syne Mono': WeightOf_Syne_Mono;
   'Syne Tactile': WeightOf_Syne_Tactile;
@@ -4735,6 +4877,7 @@ export type IMapForWeights = {
   'Tienne': WeightOf_Tienne;
   'Tillana': WeightOf_Tillana;
   'Timmana': WeightOf_Timmana;
+  'Tinos': WeightOf_Tinos;
   'Tiro Bangla': WeightOf_Tiro_Bangla;
   'Tiro Devanagari Hindi': WeightOf_Tiro_Devanagari_Hindi;
   'Tiro Devanagari Marathi': WeightOf_Tiro_Devanagari_Marathi;
@@ -4760,12 +4903,17 @@ export type IMapForWeights = {
   'Tulpen One': WeightOf_Tulpen_One;
   'Turret Road': WeightOf_Turret_Road;
   'Twinkle Star': WeightOf_Twinkle_Star;
+  'Ubuntu': WeightOf_Ubuntu;
+  'Ubuntu Condensed': WeightOf_Ubuntu_Condensed;
+  'Ubuntu Mono': WeightOf_Ubuntu_Mono;
   'Uchen': WeightOf_Uchen;
+  'Ultra': WeightOf_Ultra;
   'Uncial Antiqua': WeightOf_Uncial_Antiqua;
   'Underdog': WeightOf_Underdog;
   'Unica One': WeightOf_Unica_One;
   'UnifrakturCook': WeightOf_UnifrakturCook;
   'UnifrakturMaguntia': WeightOf_UnifrakturMaguntia;
+  'Unkempt': WeightOf_Unkempt;
   'Unlock': WeightOf_Unlock;
   'Unna': WeightOf_Unna;
   'Updock': WeightOf_Updock;
@@ -4791,6 +4939,7 @@ export type IMapForWeights = {
   'Vujahday Script': WeightOf_Vujahday_Script;
   'Waiting for the Sunrise': WeightOf_Waiting_for_the_Sunrise;
   'Wallpoet': WeightOf_Wallpoet;
+  'Walter Turncoat': WeightOf_Walter_Turncoat;
   'Warnes': WeightOf_Warnes;
   'Water Brush': WeightOf_Water_Brush;
   'Waterfall': WeightOf_Waterfall;
@@ -4806,6 +4955,7 @@ export type IMapForWeights = {
   'Yanone Kaffeesatz': WeightOf_Yanone_Kaffeesatz;
   'Yantramanav': WeightOf_Yantramanav;
   'Yatra One': WeightOf_Yatra_One;
+  'Yellowtail': WeightOf_Yellowtail;
   'Yeon Sung': WeightOf_Yeon_Sung;
   'Yeseva One': WeightOf_Yeseva_One;
   'Yesteryear': WeightOf_Yesteryear;
@@ -4835,12 +4985,6 @@ export type IMapForWeights = {
   'Zhi Mang Xing': WeightOf_Zhi_Mang_Xing;
   'Zilla Slab': WeightOf_Zilla_Slab;
   'Zilla Slab Highlight': WeightOf_Zilla_Slab_Highlight;
-  'Ubuntu': WeightOf_Ubuntu;
-  'Ubuntu Condensed': WeightOf_Ubuntu_Condensed;
-  'Ubuntu Mono': WeightOf_Ubuntu_Mono;
-  'Roboto': WeightOf_Roboto;
-  'Roboto Mono': WeightOf_Roboto_Mono;
-  'Roboto Slab': WeightOf_Roboto_Slab;
 }
 
 export type IMapForVariations = {
@@ -4850,6 +4994,7 @@ export type IMapForVariations = {
   'Aboreto': VariationOf_Aboreto;
   'Abril Fatface': VariationOf_Abril_Fatface;
   'Abyssinica SIL': VariationOf_Abyssinica_SIL;
+  'Aclonica': VariationOf_Aclonica;
   'Acme': VariationOf_Acme;
   'Actor': VariationOf_Actor;
   'Adamina': VariationOf_Adamina;
@@ -4934,6 +5079,7 @@ export type IMapForVariations = {
   'Are You Serious': VariationOf_Are_You_Serious;
   'Arima': VariationOf_Arima;
   'Arima Madurai': VariationOf_Arima_Madurai;
+  'Arimo': VariationOf_Arimo;
   'Arizonia': VariationOf_Arizonia;
   'Armata': VariationOf_Armata;
   'Arsenal': VariationOf_Arsenal;
@@ -5072,6 +5218,7 @@ export type IMapForVariations = {
   'Cairo Play': VariationOf_Cairo_Play;
   'Caladea': VariationOf_Caladea;
   'Calistoga': VariationOf_Calistoga;
+  'Calligraffitti': VariationOf_Calligraffitti;
   'Cambay': VariationOf_Cambay;
   'Cambo': VariationOf_Cambo;
   'Candal': VariationOf_Candal;
@@ -5107,7 +5254,9 @@ export type IMapForVariations = {
   'Chenla': VariationOf_Chenla;
   'Cherish': VariationOf_Cherish;
   'Cherry Bomb One': VariationOf_Cherry_Bomb_One;
+  'Cherry Cream Soda': VariationOf_Cherry_Cream_Soda;
   'Cherry Swash': VariationOf_Cherry_Swash;
+  'Chewy': VariationOf_Chewy;
   'Chicle': VariationOf_Chicle;
   'Chilanka': VariationOf_Chilanka;
   'Chivo': VariationOf_Chivo;
@@ -5126,6 +5275,7 @@ export type IMapForVariations = {
   'Comforter': VariationOf_Comforter;
   'Comforter Brush': VariationOf_Comforter_Brush;
   'Comic Neue': VariationOf_Comic_Neue;
+  'Coming Soon': VariationOf_Coming_Soon;
   'Commissioner': VariationOf_Commissioner;
   'Concert One': VariationOf_Concert_One;
   'Condiment': VariationOf_Condiment;
@@ -5144,13 +5294,17 @@ export type IMapForVariations = {
   'Cormorant Upright': VariationOf_Cormorant_Upright;
   'Courgette': VariationOf_Courgette;
   'Courier Prime': VariationOf_Courier_Prime;
+  'Cousine': VariationOf_Cousine;
   'Coustard': VariationOf_Coustard;
   'Covered By Your Grace': VariationOf_Covered_By_Your_Grace;
+  'Crafty Girls': VariationOf_Crafty_Girls;
   'Creepster': VariationOf_Creepster;
+  'Creepster Caps': VariationOf_Creepster_Caps;
   'Crete Round': VariationOf_Crete_Round;
   'Crimson Pro': VariationOf_Crimson_Pro;
   'Crimson Text': VariationOf_Crimson_Text;
   'Croissant One': VariationOf_Croissant_One;
+  'Crushed': VariationOf_Crushed;
   'Cuprum': VariationOf_Cuprum;
   'Cute Font': VariationOf_Cute_Font;
   'Cutive': VariationOf_Cutive;
@@ -5266,6 +5420,7 @@ export type IMapForVariations = {
   'Flow Rounded': VariationOf_Flow_Rounded;
   'Foldit': VariationOf_Foldit;
   'Fondamento': VariationOf_Fondamento;
+  'Fontdiner Swanky': VariationOf_Fontdiner_Swanky;
   'Forum': VariationOf_Forum;
   'Fragment Mono': VariationOf_Fragment_Mono;
   'Francois One': VariationOf_Francois_One;
@@ -5371,6 +5526,7 @@ export type IMapForVariations = {
   'Hind Siliguri': VariationOf_Hind_Siliguri;
   'Hind Vadodara': VariationOf_Hind_Vadodara;
   'Holtwood One SC': VariationOf_Holtwood_One_SC;
+  'Homemade Apple': VariationOf_Homemade_Apple;
   'Homenaje': VariationOf_Homenaje;
   'Hubballi': VariationOf_Hubballi;
   'Hurricane': VariationOf_Hurricane;
@@ -5412,6 +5568,7 @@ export type IMapForVariations = {
   'Inspiration': VariationOf_Inspiration;
   'Inter': VariationOf_Inter;
   'Inter Tight': VariationOf_Inter_Tight;
+  'Irish Grover': VariationOf_Irish_Grover;
   'Island Moments': VariationOf_Island_Moments;
   'Istok Web': VariationOf_Istok_Web;
   'Italiana': VariationOf_Italiana;
@@ -5431,12 +5588,19 @@ export type IMapForVariations = {
   'Josefin Slab': VariationOf_Josefin_Slab;
   'Jost': VariationOf_Jost;
   'Joti One': VariationOf_Joti_One;
+  'jsMath cmbx10': VariationOf_jsMath_cmbx10;
+  'jsMath cmex10': VariationOf_jsMath_cmex10;
+  'jsMath cmmi10': VariationOf_jsMath_cmmi10;
+  'jsMath cmr10': VariationOf_jsMath_cmr10;
+  'jsMath cmsy10': VariationOf_jsMath_cmsy10;
+  'jsMath cmti10': VariationOf_jsMath_cmti10;
   'Jua': VariationOf_Jua;
   'Judson': VariationOf_Judson;
   'Julee': VariationOf_Julee;
   'Julius Sans One': VariationOf_Julius_Sans_One;
   'Junge': VariationOf_Junge;
   'Jura': VariationOf_Jura;
+  'Just Another Hand': VariationOf_Just_Another_Hand;
   'Just Me Again Down Here': VariationOf_Just_Me_Again_Down_Here;
   'K2D': VariationOf_K2D;
   'Kadwa': VariationOf_Kadwa;
@@ -5476,8 +5640,11 @@ export type IMapForVariations = {
   'KoHo': VariationOf_KoHo;
   'Koh Santepheap': VariationOf_Koh_Santepheap;
   'Kolker Brush': VariationOf_Kolker_Brush;
+  'Kosugi': VariationOf_Kosugi;
+  'Kosugi Maru': VariationOf_Kosugi_Maru;
   'Kotta One': VariationOf_Kotta_One;
   'Koulen': VariationOf_Koulen;
+  'Kranky': VariationOf_Kranky;
   'Kreon': VariationOf_Kreon;
   'Kristi': VariationOf_Kristi;
   'Krona One': VariationOf_Krona_One;
@@ -5548,6 +5715,7 @@ export type IMapForVariations = {
   'Love Light': VariationOf_Love_Light;
   'Lovers Quarrel': VariationOf_Lovers_Quarrel;
   'Love Ya Like A Sister': VariationOf_Love_Ya_Like_A_Sister;
+  'Luckiest Guy': VariationOf_Luckiest_Guy;
   'Lusitana': VariationOf_Lusitana;
   'Lustria': VariationOf_Lustria;
   'Luxurious Roman': VariationOf_Luxurious_Roman;
@@ -5556,6 +5724,7 @@ export type IMapForVariations = {
   'Macondo Swash Caps': VariationOf_Macondo_Swash_Caps;
   'Mada': VariationOf_Mada;
   'Magra': VariationOf_Magra;
+  'Maiden Orange': VariationOf_Maiden_Orange;
   'Maitree': VariationOf_Maitree;
   'Major Mono Display': VariationOf_Major_Mono_Display;
   'Mako': VariationOf_Mako;
@@ -5628,6 +5797,7 @@ export type IMapForVariations = {
   'Montaga': VariationOf_Montaga;
   'Montagu Slab': VariationOf_Montagu_Slab;
   'MonteCarlo': VariationOf_MonteCarlo;
+  'Montez': VariationOf_Montez;
   'Montserrat': VariationOf_Montserrat;
   'Montserrat Alternates': VariationOf_Montserrat_Alternates;
   'Montserrat Subrayada': VariationOf_Montserrat_Subrayada;
@@ -5635,6 +5805,7 @@ export type IMapForVariations = {
   'Moon Dance': VariationOf_Moon_Dance;
   'Moul': VariationOf_Moul;
   'Moulpali': VariationOf_Moulpali;
+  'Mountains of Christmas': VariationOf_Mountains_of_Christmas;
   'Mouse Memoirs': VariationOf_Mouse_Memoirs;
   'M PLUS 1': VariationOf_M_PLUS_1;
   'M PLUS 1 Code': VariationOf_M_PLUS_1_Code;
@@ -5914,6 +6085,7 @@ export type IMapForVariations = {
   'Oleo Script Swash Caps': VariationOf_Oleo_Script_Swash_Caps;
   'Oooh Baby': VariationOf_Oooh_Baby;
   'Open Sans': VariationOf_Open_Sans;
+  'Open Sans Condensed': VariationOf_Open_Sans_Condensed;
   'Oranienbaum': VariationOf_Oranienbaum;
   'Orbitron': VariationOf_Orbitron;
   'Oregano': VariationOf_Oregano;
@@ -5953,6 +6125,7 @@ export type IMapForVariations = {
   'Pecita': VariationOf_Pecita;
   'Peddana': VariationOf_Peddana;
   'Peralta': VariationOf_Peralta;
+  'Permanent Marker': VariationOf_Permanent_Marker;
   'Petemoss': VariationOf_Petemoss;
   'Petit Formal Script': VariationOf_Petit_Formal_Script;
   'Petrona': VariationOf_Petrona;
@@ -6029,6 +6202,7 @@ export type IMapForVariations = {
   'Rammetto One': VariationOf_Rammetto_One;
   'Rampart One': VariationOf_Rampart_One;
   'Ranchers': VariationOf_Ranchers;
+  'Rancho': VariationOf_Rancho;
   'Ranga': VariationOf_Ranga;
   'Rasa': VariationOf_Rasa;
   'Rationale': VariationOf_Rationale;
@@ -6040,6 +6214,7 @@ export type IMapForVariations = {
   'Red Hat Display': VariationOf_Red_Hat_Display;
   'Red Hat Mono': VariationOf_Red_Hat_Mono;
   'Red Hat Text': VariationOf_Red_Hat_Text;
+  'Redressed': VariationOf_Redressed;
   'Red Rose': VariationOf_Red_Rose;
   'Reem Kufi': VariationOf_Reem_Kufi;
   'Reem Kufi Fun': VariationOf_Reem_Kufi_Fun;
@@ -6053,10 +6228,15 @@ export type IMapForVariations = {
   'Righteous': VariationOf_Righteous;
   'Risque': VariationOf_Risque;
   'Road Rage': VariationOf_Road_Rage;
+  'Roboto': VariationOf_Roboto;
   'Roboto Flex': VariationOf_Roboto_Flex;
+  'Roboto Mono': VariationOf_Roboto_Mono;
   'Roboto Serif': VariationOf_Roboto_Serif;
+  'Roboto Slab': VariationOf_Roboto_Slab;
+  'Rochester': VariationOf_Rochester;
   'Rock 3D': VariationOf_Rock_3D;
   'RocknRoll One': VariationOf_RocknRoll_One;
+  'Rock Salt': VariationOf_Rock_Salt;
   'Rokkitt': VariationOf_Rokkitt;
   'Romanesco': VariationOf_Romanesco;
   'Ropa Sans': VariationOf_Ropa_Sans;
@@ -6111,9 +6291,11 @@ export type IMapForVariations = {
   'Sarina': VariationOf_Sarina;
   'Sarpanch': VariationOf_Sarpanch;
   'Sassy Frass': VariationOf_Sassy_Frass;
+  'Satisfy': VariationOf_Satisfy;
   'Sawarabi Mincho': VariationOf_Sawarabi_Mincho;
   'Scada': VariationOf_Scada;
   'Scheherazade New': VariationOf_Scheherazade_New;
+  'Schoolbell': VariationOf_Schoolbell;
   'Scope One': VariationOf_Scope_One;
   'Seaweed Script': VariationOf_Seaweed_Script;
   'Secular One': VariationOf_Secular_One;
@@ -6156,7 +6338,9 @@ export type IMapForVariations = {
   'Skranji': VariationOf_Skranji;
   'Slabo 13px': VariationOf_Slabo_13px;
   'Slabo 27px': VariationOf_Slabo_27px;
+  'Slackey': VariationOf_Slackey;
   'Slackside One': VariationOf_Slackside_One;
+  'Smokum': VariationOf_Smokum;
   'Smooch': VariationOf_Smooch;
   'Smooch Sans': VariationOf_Smooch_Sans;
   'Smythe': VariationOf_Smythe;
@@ -6180,6 +6364,7 @@ export type IMapForVariations = {
   'Source Serif Pro': VariationOf_Source_Serif_Pro;
   'Space Grotesk': VariationOf_Space_Grotesk;
   'Space Mono': VariationOf_Space_Mono;
+  'Special Elite': VariationOf_Special_Elite;
   'Spectral': VariationOf_Spectral;
   'Spectral SC': VariationOf_Spectral_SC;
   'Spicy Rice': VariationOf_Spicy_Rice;
@@ -6213,12 +6398,14 @@ export type IMapForVariations = {
   'Sulphur Point': VariationOf_Sulphur_Point;
   'Sumana': VariationOf_Sumana;
   'Sunflower': VariationOf_Sunflower;
+  'Sunshiney': VariationOf_Sunshiney;
   'Supermercado One': VariationOf_Supermercado_One;
   'Sura': VariationOf_Sura;
   'Suranna': VariationOf_Suranna;
   'Suravaram': VariationOf_Suravaram;
   'Suwannaphum': VariationOf_Suwannaphum;
   'Swanky and Moo Moo': VariationOf_Swanky_and_Moo_Moo;
+  'Syncopate': VariationOf_Syncopate;
   'Syne': VariationOf_Syne;
   'Syne Mono': VariationOf_Syne_Mono;
   'Syne Tactile': VariationOf_Syne_Tactile;
@@ -6242,6 +6429,7 @@ export type IMapForVariations = {
   'Tienne': VariationOf_Tienne;
   'Tillana': VariationOf_Tillana;
   'Timmana': VariationOf_Timmana;
+  'Tinos': VariationOf_Tinos;
   'Tiro Bangla': VariationOf_Tiro_Bangla;
   'Tiro Devanagari Hindi': VariationOf_Tiro_Devanagari_Hindi;
   'Tiro Devanagari Marathi': VariationOf_Tiro_Devanagari_Marathi;
@@ -6267,12 +6455,17 @@ export type IMapForVariations = {
   'Tulpen One': VariationOf_Tulpen_One;
   'Turret Road': VariationOf_Turret_Road;
   'Twinkle Star': VariationOf_Twinkle_Star;
+  'Ubuntu': VariationOf_Ubuntu;
+  'Ubuntu Condensed': VariationOf_Ubuntu_Condensed;
+  'Ubuntu Mono': VariationOf_Ubuntu_Mono;
   'Uchen': VariationOf_Uchen;
+  'Ultra': VariationOf_Ultra;
   'Uncial Antiqua': VariationOf_Uncial_Antiqua;
   'Underdog': VariationOf_Underdog;
   'Unica One': VariationOf_Unica_One;
   'UnifrakturCook': VariationOf_UnifrakturCook;
   'UnifrakturMaguntia': VariationOf_UnifrakturMaguntia;
+  'Unkempt': VariationOf_Unkempt;
   'Unlock': VariationOf_Unlock;
   'Unna': VariationOf_Unna;
   'Updock': VariationOf_Updock;
@@ -6298,6 +6491,7 @@ export type IMapForVariations = {
   'Vujahday Script': VariationOf_Vujahday_Script;
   'Waiting for the Sunrise': VariationOf_Waiting_for_the_Sunrise;
   'Wallpoet': VariationOf_Wallpoet;
+  'Walter Turncoat': VariationOf_Walter_Turncoat;
   'Warnes': VariationOf_Warnes;
   'Water Brush': VariationOf_Water_Brush;
   'Waterfall': VariationOf_Waterfall;
@@ -6313,6 +6507,7 @@ export type IMapForVariations = {
   'Yanone Kaffeesatz': VariationOf_Yanone_Kaffeesatz;
   'Yantramanav': VariationOf_Yantramanav;
   'Yatra One': VariationOf_Yatra_One;
+  'Yellowtail': VariationOf_Yellowtail;
   'Yeon Sung': VariationOf_Yeon_Sung;
   'Yeseva One': VariationOf_Yeseva_One;
   'Yesteryear': VariationOf_Yesteryear;
@@ -6342,10 +6537,4 @@ export type IMapForVariations = {
   'Zhi Mang Xing': VariationOf_Zhi_Mang_Xing;
   'Zilla Slab': VariationOf_Zilla_Slab;
   'Zilla Slab Highlight': VariationOf_Zilla_Slab_Highlight;
-  'Ubuntu': VariationOf_Ubuntu;
-  'Ubuntu Condensed': VariationOf_Ubuntu_Condensed;
-  'Ubuntu Mono': VariationOf_Ubuntu_Mono;
-  'Roboto': VariationOf_Roboto;
-  'Roboto Mono': VariationOf_Roboto_Mono;
-  'Roboto Slab': VariationOf_Roboto_Slab;
 }

@@ -178,9 +178,10 @@ function generateFontVariationType(font: FontI): string {
   return result;
 }
 
-let allFontDirs = getDirectories("../google-fonts/ofl");
+let allFontDirs = getDirectories("../google-fonts/apache");
+allFontDirs.push(...getDirectories("../google-fonts/ofl"));
 allFontDirs.push(...getDirectories("../google-fonts/ufl"));
-allFontDirs.push(...getDirectories("missing-fonts"));
+allFontDirs.sort((a, b) => a[1].localeCompare(b[1]));
 
 let fontsWithMetaData: FontI[] = [];
 
