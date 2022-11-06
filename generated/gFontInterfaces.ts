@@ -2,26 +2,26 @@
 
 import { StringIntRange, StringFloatRange } from "@tjmora/ts-range-types";
 
-type Font_CASL_t<MIN extends number, MAX extends number> = `CASL=${StringFloatRange<MIN, MAX, 2>}`;
-type Font_CRSV_t<MIN extends number, MAX extends number> = `CRSV=${StringFloatRange<MIN, MAX, 1>}`;
-type Font_EDPT_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = `EDPT=${StringIntRange<MIN, MAX, D>}`;
-type Font_EHLT_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = `EHLT=${StringIntRange<MIN, MAX, D>}`;
-type Font_FILL_t<MIN extends number, MAX extends number> = `FILL=${StringFloatRange<MIN, MAX, 2>}`;
-type Font_GRAD_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `GRAD=${StringIntRange<MIN, MAX, D>}`;
-type Font_MONO_t<MIN extends number, MAX extends number> = `MONO=${StringFloatRange<MIN, MAX, 2>}`;
-type Font_opsz_t<MIN extends number, MAX extends number> = `opsz=${StringFloatRange<MIN, MAX, 1>}`;
-type Font_slnt_t<MIN extends number | [number], MAX extends number | [number]> = `slnt=${StringIntRange<MIN, MAX>}`;
-type Font_SOFT_t<MIN extends number, MAX extends number> = `SOFT=${StringFloatRange<MIN, MAX, 1>}`;
-type Font_wdth_t<MIN extends number, MAX extends number> = `wdth=${StringFloatRange<MIN, MAX, 1>}`;
-type Font_WONK_t<MIN extends number, MAX extends number> = `WONK=${StringIntRange<MIN, MAX>}`;
-type Font_XOPQ_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `XOPQ=${StringIntRange<MIN, MAX, D>}`;
-type Font_XTRA_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `XTRA=${StringIntRange<MIN, MAX, D>}`;
-type Font_YOPQ_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `YOPQ=${StringIntRange<MIN, MAX, D>}`;
-type Font_YTAS_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = `YTAS=${StringIntRange<MIN, MAX, D>}`;
-type Font_YTDE_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `YTDE=${StringIntRange<MIN, MAX, D>}`;
-type Font_YTFI_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `YTFI=${StringIntRange<MIN, MAX, D>}`;
-type Font_YTLC_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = `YTLC=${StringIntRange<MIN, MAX, D>}`;
-type Font_YTUC_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = `YTUC=${StringIntRange<MIN, MAX, D>}`;
+type Font_CASL_t<MIN extends number, MAX extends number> = `CASL:${StringFloatRange<MIN, MAX, 2>}`;
+type Font_CRSV_t<MIN extends number, MAX extends number> = `CRSV:${StringFloatRange<MIN, MAX, 1>}`;
+type Font_EDPT_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = `EDPT:${StringIntRange<MIN, MAX, D>}`;
+type Font_EHLT_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = `EHLT:${StringIntRange<MIN, MAX, D>}`;
+type Font_FILL_t<MIN extends number, MAX extends number> = `FILL:${StringFloatRange<MIN, MAX, 2>}`;
+type Font_GRAD_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `GRAD:${StringIntRange<MIN, MAX, D>}`;
+type Font_MONO_t<MIN extends number, MAX extends number> = `MONO:${StringFloatRange<MIN, MAX, 2>}`;
+type Font_opsz_t<MIN extends number, MAX extends number> = `opsz:${StringFloatRange<MIN, MAX, 1>}`;
+type Font_slnt_t<MIN extends number | [number], MAX extends number | [number]> = `slnt:${StringIntRange<MIN, MAX>}`;
+type Font_SOFT_t<MIN extends number, MAX extends number> = `SOFT:${StringFloatRange<MIN, MAX, 1>}`;
+type Font_wdth_t<MIN extends number, MAX extends number> = `wdth:${StringFloatRange<MIN, MAX, 1>}`;
+type Font_WONK_t<MIN extends number, MAX extends number> = `WONK:${StringIntRange<MIN, MAX>}`;
+type Font_XOPQ_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `XOPQ:${StringIntRange<MIN, MAX, D>}`;
+type Font_XTRA_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `XTRA:${StringIntRange<MIN, MAX, D>}`;
+type Font_YOPQ_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `YOPQ:${StringIntRange<MIN, MAX, D>}`;
+type Font_YTAS_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = `YTAS:${StringIntRange<MIN, MAX, D>}`;
+type Font_YTDE_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `YTDE:${StringIntRange<MIN, MAX, D>}`;
+type Font_YTFI_t<MIN extends number | [number], MAX extends number | [number], D extends 0 | 1 | 2 = 0> = `YTFI:${StringIntRange<MIN, MAX, D>}`;
+type Font_YTLC_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = `YTLC:${StringIntRange<MIN, MAX, D>}`;
+type Font_YTUC_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = `YTUC:${StringIntRange<MIN, MAX, D>}`;
 
 export type GFontName = 
   |'ABeeZee'|'Abel'|'Abhaya Libre'|'Aboreto'|'Abril Fatface'
