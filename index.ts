@@ -405,7 +405,7 @@ const gFontCopyrightData =
   "const gFontCopyrightData: {[key: string]: [string, string]} = {\n" +
   fontsWithMetaData.reduce((acc, cur) => {
     return (
-      acc + `  "${cur.name}": ["${cur.license}" , "${cur.copyright}"],${"\n"}`
+      acc + `  ${cur.name.replace(/\s/g, "_")}: ["${cur.license}" , "${cur.copyright}"],${"\n"}`
     );
   }, "") +
   "};\n\nexport default gFontCopyrightData;";
