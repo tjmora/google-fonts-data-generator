@@ -35,6 +35,8 @@ interface AxisI {
 
 interface FontI {
   name: string;
+  license: string;
+  copyright: string;
   variants: VariantI[];
   hasNormal: boolean;
   hasItalic: boolean;
@@ -199,7 +201,24 @@ allFontDirs.forEach(([parentDir, fontDir]) => {
     let nameMatch = textContent.match(/name\s*:\s*"[a-zA-Z0-9_ ]+"/);
     if (nameMatch) name = nameMatch[0].match(/(?<=")[A-Za-z0-9_ ]+(?=")/)![0];
     else
-      throw parentDir + "/" + fontDir + "/METADATA.pb does not contain a name";
+      throw `${parentDir}/${fontDir}/METADATA.pb does not contain a name`;
+
+    // Get the license of the font
+    let license = "";
+    let licenseMatch = textContent.match(/license\s*:\s*"[a-zA-Z0-9_ ]+"/);
+    if (licenseMatch) license = licenseMatch[0].match(/(?<=")[A-Za-z0-9_ ]+(?=")/)![0];
+    else
+      console.log(`${parentDir}/${fontDir}/METADATA.pb does not contain a license`);
+
+    if (license !== "" && license !== "OFL" && license !== "UFL" && license !== "APACHE2")
+      console.log(`${parentDir}/${fontDir} license is unique (${license})`);
+
+    // Get the copyright of the font
+    let copyright = "";
+    let copyrightMatch = textContent.match(/copyright\s*:\s*"(\\"|[^"])+"/);
+    if (copyrightMatch) copyright = copyrightMatch[0].match(/(?<=")(\\"|[^"])+(?=")/)![0];
+    else
+      console.log(`${parentDir}/${fontDir}/METADATA.pb does not contain a copyright`);
 
     // Get the non-axis variants
     const variantMatches = textContent.match(/fonts\s*\{[^}]+\}/g);
@@ -252,6 +271,8 @@ allFontDirs.forEach(([parentDir, fontDir]) => {
 
     fontsWithMetaData.push({
       name: name,
+      license: license,
+      copyright: copyright,
       variants: variants,
       hasNormal: hasNormal,
       hasItalic: hasItalic,
@@ -354,3 +375,11 @@ ${fontsWithMetaData.reduce((acc, cur) => {
 `;
 
 fs.writeFileSync("generated/gFontInterfaces.ts", tjmoraGFontInterface);
+
+const gFontCopyrightData = "const gFontCopyrightData: {[key: string]: [string, string]} = {\n" + 
+  fontsWithMetaData.reduce((acc, cur) => {
+    return acc + `  "${cur.name}": ["${cur.license}" , "${cur.copyright}"],${"\n"}`;
+  }, "") +
+  "};\nexport default gFontCopyrightData;";
+
+fs.writeFileSync("generated/gFontCopyrightData.ts", gFontCopyrightData);
