@@ -80,14 +80,19 @@ function hasWeight(font: FontI, weight: number): boolean {
 
 function getNonRangedNumericWeights(font: FontI): number[] {
   let result: number[] = [];
-  font.variants.filter(v => v.style === "normal").forEach(variant => {
-    let add = true;
-    if (font.axes["wght"]) {
-      if (variant.weight >= font.axes["wght"].min && variant.weight <= font.axes["wght"].max)
-        add = false;
-    }
-    if (add) result.push(variant.weight);
-  });
+  font.variants
+    .filter((v) => v.style === "normal")
+    .forEach((variant) => {
+      let add = true;
+      if (font.axes["wght"]) {
+        if (
+          variant.weight >= font.axes["wght"].min &&
+          variant.weight <= font.axes["wght"].max
+        )
+          add = false;
+      }
+      if (add) result.push(variant.weight);
+    });
   result.sort((a, b) => a - b);
   return result;
 }
@@ -103,7 +108,7 @@ function generateSemanticWeights(font: FontI): string[] {
 
 function generateNonRangedNumericWeightTypes(font: FontI): string {
   return getNonRangedNumericWeights(font).reduce((acc, cur) => {
-    return acc + "'" +cur + "'|";
+    return acc + "'" + cur + "'|";
   }, "");
 }
 
@@ -115,9 +120,10 @@ function generateSemanticWeightTypes(font: FontI): string {
 
 function generateWeightRangeType(font: FontI): string {
   if (font.axes["wght"])
-    return `StringIntRange<${Math.floor(font.axes["wght"].min/10)},${Math.floor(font.axes["wght"].max/10)},1>|`
-  else
-    return "";
+    return `StringIntRange<${Math.floor(
+      font.axes["wght"].min / 10
+    )},${Math.floor(font.axes["wght"].max / 10)},1>|`;
+  else return "";
 }
 
 function generateFontStyleType(font: FontI): string {
@@ -129,12 +135,14 @@ function generateFontStyleType(font: FontI): string {
 
 function generateFontVariationType(font: FontI): string {
   let result = "";
-  Object.keys(font.axes).forEach(key => {
+  Object.keys(font.axes).forEach((key) => {
     let min = font.axes[key as Tag]!.min;
     let max = font.axes[key as Tag]!.max;
     if (Math.floor(min) === Math.floor(max))
-      console.log(`Warning: The Min and Max for the ${key} axis of font ${font.name} floors to the same number.`);
-    switch(key) {
+      console.log(
+        `Warning: The Min and Max for the ${key} axis of font ${font.name} floors to the same number.`
+      );
+    switch (key) {
       case "wght":
       case "ital":
         //skip
@@ -155,9 +163,10 @@ function generateFontVariationType(font: FontI): string {
       case "YTLC":
       case "YTUC":
         if (min % 100 === 0 && max % 100 === 0)
-          result += `Font_${key}_t<${Math.floor(min / 100)},${Math.floor(max / 100)},2>|`;
-        else
-          result += `Font_${key}_t<${min},${max}>|`;
+          result += `Font_${key}_t<${Math.floor(min / 100)},${Math.floor(
+            max / 100
+          )},2>|`;
+        else result += `Font_${key}_t<${min},${max}>|`;
         break;
       case "GRAD":
       case "XOPQ":
@@ -166,17 +175,31 @@ function generateFontVariationType(font: FontI): string {
       case "YTDE":
       case "YTFI":
         if (min % 100 === 0 && max % 100 === 0)
-          result += `Font_${key}_t<${min >= 0 ? Math.floor(min / 100) : `[${Math.abs(Math.floor(min / 100))}]`},${max >= 0 ? Math.floor(max / 100) : `[${Math.abs(Math.floor(max / 100))}]`},2>|`;
+          result += `Font_${key}_t<${
+            min >= 0
+              ? Math.floor(min / 100)
+              : `[${Math.abs(Math.floor(min / 100))}]`
+          },${
+            max >= 0
+              ? Math.floor(max / 100)
+              : `[${Math.abs(Math.floor(max / 100))}]`
+          },2>|`;
         else
-          result += `Font_${key}_t<${min >= 0 ? Math.floor(min) : `[${Math.abs(Math.floor(min))}]`},${max >= 0 ? Math.floor(max) : `[${Math.abs(Math.floor(max))}]`}>|`;
+          result += `Font_${key}_t<${
+            min >= 0 ? Math.floor(min) : `[${Math.abs(Math.floor(min))}]`
+          },${max >= 0 ? Math.floor(max) : `[${Math.abs(Math.floor(max))}]`}>|`;
         break;
       case "slnt":
-        result += `Font_${key}_t<${min >= 0 ? Math.floor(min) : `[${Math.abs(Math.floor(min))}]`},${max >= 0 ? Math.floor(max) : `[${Math.abs(Math.floor(max))}]`}>|`;
+        result += `Font_${key}_t<${
+          min >= 0 ? Math.floor(min) : `[${Math.abs(Math.floor(min))}]`
+        },${max >= 0 ? Math.floor(max) : `[${Math.abs(Math.floor(max))}]`}>|`;
         break;
       default:
-        console.log(`The font ${font.name} has an undocumented variation axis called ${key}. This axis is ignored.`);
+        console.log(
+          `The font ${font.name} has an undocumented variation axis called ${key}. This axis is ignored.`
+        );
     }
-  })
+  });
   return result;
 }
 
@@ -189,7 +212,9 @@ let fontsWithMetaData: FontI[] = [];
 
 allFontDirs.forEach(([parentDir, fontDir]) => {
   if (!fs.existsSync(path.join(parentDir, fontDir, "METADATA.pb"))) {
-    console.log(`The font ${parentDir}/${fontDir} has no METADATA file. The font is ignored.`);
+    console.log(
+      `The font ${parentDir}/${fontDir} has no METADATA file. The font is ignored.`
+    );
   } else {
     const textContent = fs.readFileSync(
       path.join(parentDir, fontDir, "METADATA.pb"),
@@ -200,25 +225,35 @@ allFontDirs.forEach(([parentDir, fontDir]) => {
     let name = "";
     let nameMatch = textContent.match(/name\s*:\s*"[a-zA-Z0-9_ ]+"/);
     if (nameMatch) name = nameMatch[0].match(/(?<=")[A-Za-z0-9_ ]+(?=")/)![0];
-    else
-      throw `${parentDir}/${fontDir}/METADATA.pb does not contain a name`;
+    else throw `${parentDir}/${fontDir}/METADATA.pb does not contain a name`;
 
     // Get the license of the font
     let license = "";
     let licenseMatch = textContent.match(/license\s*:\s*"[a-zA-Z0-9_ ]+"/);
-    if (licenseMatch) license = licenseMatch[0].match(/(?<=")[A-Za-z0-9_ ]+(?=")/)![0];
+    if (licenseMatch)
+      license = licenseMatch[0].match(/(?<=")[A-Za-z0-9_ ]+(?=")/)![0];
     else
-      console.log(`${parentDir}/${fontDir}/METADATA.pb does not contain a license`);
+      console.log(
+        `${parentDir}/${fontDir}/METADATA.pb does not contain a license`
+      );
 
-    if (license !== "" && license !== "OFL" && license !== "UFL" && license !== "APACHE2")
+    if (
+      license !== "" &&
+      license !== "OFL" &&
+      license !== "UFL" &&
+      license !== "APACHE2"
+    )
       console.log(`${parentDir}/${fontDir} license is unique (${license})`);
 
     // Get the copyright of the font
     let copyright = "";
     let copyrightMatch = textContent.match(/copyright\s*:\s*"(\\"|[^"])+"/);
-    if (copyrightMatch) copyright = copyrightMatch[0].match(/(?<=")(\\"|[^"])+(?=")/)![0];
+    if (copyrightMatch)
+      copyright = copyrightMatch[0].match(/(?<=")(\\"|[^"])+(?=")/)![0];
     else
-      console.log(`${parentDir}/${fontDir}/METADATA.pb does not contain a copyright`);
+      console.log(
+        `${parentDir}/${fontDir}/METADATA.pb does not contain a copyright`
+      );
 
     // Get the non-axis variants
     const variantMatches = textContent.match(/fonts\s*\{[^}]+\}/g);
@@ -276,7 +311,7 @@ allFontDirs.forEach(([parentDir, fontDir]) => {
       variants: variants,
       hasNormal: hasNormal,
       hasItalic: hasItalic,
-      axes: axes
+      axes: axes,
     });
   }
 });
@@ -309,77 +344,70 @@ type Font_YTFI_t<MIN extends number | [number], MAX extends number | [number], D
 type Font_YTLC_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = ${"`YTLC:${StringIntRange<MIN, MAX, D>}`"};
 type Font_YTUC_t<MIN extends number, MAX extends number, D extends 0 | 1 | 2 = 0> = ${"`YTUC:${StringIntRange<MIN, MAX, D>}`"};
 
-export type GFontName = ${fontsWithMetaData
-  .reduce(
-    (acc, cur, i) =>
-      acc + (i % 5 === 0 ? "\n  " : "") +"|'" + cur.name + "'",
-    ""
-  )};
+export type GFontName = ${fontsWithMetaData.reduce(
+  (acc, cur, i) => acc + (i % 5 === 0 ? "\n  " : "") + "|'" + cur.name + "'",
+  ""
+)};
 
-${
-  fontsWithMetaData.reduce((acc, cur) => {
-    return (
-      acc +
-      "type WeightOf_" +
-      cur.name.replace(/\s/g, "_") +
-      " = " +
-      (
-        generateWeightRangeType(cur) +
-        generateNonRangedNumericWeightTypes(cur) +
-        generateSemanticWeightTypes(cur)
-      )
-      .slice(0, -1) +
-      ";\n"
-    ) 
-  }, "")
-}
-${
-  fontsWithMetaData.reduce((acc, cur) => {
-    return (
-      acc +
-      "type VariationOf_" +
-      cur.name.replace(/\s/g, "_") +
-      " = " +
-      (
-        generateFontStyleType(cur) +
-        generateFontVariationType(cur)
-      )
-      .slice(0, -1) +
-      ";\n"
-    ) 
-  }, "")
-}
+${fontsWithMetaData.reduce((acc, cur) => {
+  return (
+    acc +
+    "type WeightOf_" +
+    cur.name.replace(/\s/g, "_") +
+    " = " +
+    (
+      generateWeightRangeType(cur) +
+      generateNonRangedNumericWeightTypes(cur) +
+      generateSemanticWeightTypes(cur)
+    ).slice(0, -1) +
+    ";\n"
+  );
+}, "")}
+${fontsWithMetaData.reduce((acc, cur) => {
+  return (
+    acc +
+    "type VariationOf_" +
+    cur.name.replace(/\s/g, "_") +
+    " = " +
+    (generateFontStyleType(cur) + generateFontVariationType(cur)).slice(0, -1) +
+    ";\n"
+  );
+}, "")}
 export type IMapForWeights = {
 ${fontsWithMetaData.reduce((acc, cur) => {
-    return (
-      acc +
-      "  '" +
-      cur.name +
-      "': WeightOf_" +
-      cur.name.replace(/\s/g, "_") +
-      ";\n"
-    );
-  }, "")}}
+  return (
+    acc +
+    "  '" +
+    cur.name +
+    "': WeightOf_" +
+    cur.name.replace(/\s/g, "_") +
+    ";\n"
+  );
+}, "")}}
 
 export type IMapForVariations = {
 ${fontsWithMetaData.reduce((acc, cur) => {
-    return (
-      acc +
-      "  '" +
-      cur.name +
-      "': VariationOf_" +
-      cur.name.replace(/\s/g, "_") +
-      ";\n"
-    );
-  }, "")}}
+  return (
+    acc +
+    "  '" +
+    cur.name +
+    "': VariationOf_" +
+    cur.name.replace(/\s/g, "_") +
+    ";\n"
+  );
+}, "")}}
 `;
 
 fs.writeFileSync("generated/gFontInterfaces.ts", tjmoraGFontInterface);
 
-const gFontCopyrightData = "const gFontCopyrightData: {[key: string]: [string, string]} = {\n" + 
+const gFontCopyrightData =
+  "// This file is generated by github.com/tjmora/google-fonts-data-generator\n\n" +
+  "const gFontCopyrightData: {[key: string]: [string, string]} = {\n" +
   fontsWithMetaData.reduce((acc, cur) => {
-    return acc + `  "${cur.name}": ["${cur.license}" , "${cur.copyright}"],${"\n"}`;
+    return (
+      acc + `  "${cur.name}": ["${cur.license}" , "${cur.copyright}"],${"\n"}`
+    );
   }, "") +
-  "};\nexport default gFontCopyrightData;";
+  "};\n\nexport default gFontCopyrightData;";
 
 fs.writeFileSync("generated/gFontCopyrightData.ts", gFontCopyrightData);
